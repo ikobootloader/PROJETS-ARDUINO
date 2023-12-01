@@ -18,6 +18,14 @@ TELEMETRE LASER - TOF10120 > Fonctions pour l'utilisation du télémètre TOF101
 
 Tension > Lecteur de tension 
 
+capteur_vitesse > Fonctions pour l'utilisation de capteur de vitesse optocoupleur
+
+dvr8833 > Pilotage de 2 moteurs CC 
+
+led_RGB > Fonctions pour l'utilisation de la Led RGB
+
+shift_register > Fonction pour l'utilisation du registre à décalage SN74HC595N
+
 <H3>** AGENT/VOITURE AUTONOME **</H3>
 
 <p><b>Projet de voiture autonome / adaptative pour Arduino UNO</b></p>
