@@ -31,8 +31,6 @@ shift_register > Fonction pour l'utilisation du registre à décalage SN74HC595N
 <p><b>Projet de voiture autonome / adaptative pour Arduino UNO</b></p>
 
 <p>Ce projet est développé à l'aide des outils ci-dessus.</p>
-<p>Mon objectif est de créer une petite intelligence artificielle simple mais efficace, suffisament légère pour être supportée par l'ATmega328P</p>
-
 
 <br>
 Télécharger les répertoires individuellement à l'aide de l'outil <a href="https://download-directory.github.io/">https://download-directory.github.io/</a>
