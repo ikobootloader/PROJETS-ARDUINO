@@ -1,0 +1,14 @@
+FONCTIONS	KEYWORD1
+
+concatenation	KEYWORD3
+frequence	KEYWORD3
+plusFrequent	KEYWORD3
+compteurIntervalle	KEYWORD3
+intervalle	KEYWORD3
+resetIntervalle		KEYWORD3
+mini	KEYWORD3
+maxi	KEYWORD3
+triAsc	KEYWORD3
+triDesc	KEYWORD3
+inverser	KEYWORD3
+plusFrequentExclusion	KEYWORD3

@@ -1,0 +1,7 @@
+INFRAROUGE	KEYWORD1
+
+setupInfra	KEYWORD3
+detection	KEYWORD3
+
+
+

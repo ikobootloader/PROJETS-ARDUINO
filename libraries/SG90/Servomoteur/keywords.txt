@@ -1,0 +1,8 @@
+SERVOMOTEUR	KEYWORD1
+
+setupServo	KEYWORD3
+oscillateur	KEYWORD3
+amplitude	KEYWORD3
+angles		KEYWORD3
+
+

@@ -1,0 +1,7 @@
+TENSION		KEYWORD1
+
+lecture_tension	KEYWORD3
+tensionAcomparer KEYWORD3
+
+
+
