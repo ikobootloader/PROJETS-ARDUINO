@@ -6,11 +6,15 @@
   
 FONCTIONS > Bibliothèque de fonctions pour variables, gestion du temps et tableaux
 
+Infrarouge > Fonctions pour l'utilisation d'un détecteur infrarouge
+
 L298N / L293D > Pilotage de 2 moteurs CC
+
+Led > Gestion de trois LED
 
 SG90 > Oscillateur pour balayage automatique d'un servomoteur</p>
 
-Led > Gestion de trois LED
+TELEMETRE LASER - TOF10120 > Fonctions pour l'utilisation du télémètre TOF10120
 
 Tension > Lecteur de tension 
 
