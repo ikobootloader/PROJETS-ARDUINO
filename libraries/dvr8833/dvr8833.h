@@ -28,9 +28,9 @@ class DVR8833{
 	private:
 	
 		const uint8_t _in1Pin = 5;
-		const uint8_t _in2Pin = 4;
+		const uint8_t _in2Pin = 10;
 		const uint8_t _in3Pin = 3;
-		const uint8_t _in4Pin = 2;
+		const uint8_t _in4Pin = 11;
 		//ARRAY = GAUCHE;DROITE;RECUL;AVANT;ARRET
 		uint8_t _tabDrive[5][4] = {{255,0,255,0},{0,255,0,255},{0,255,255,0},{255,0,0,255},{0,0,0,0}}; // Matrice d'actions
 		
