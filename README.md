@@ -6,7 +6,7 @@
   
 FONCTIONS > Bibliothèque de fonctions pour variables, gestion du temps et tableaux
 
-Infrarouge > Fonctions pour l'utilisation d'un détecteur infrarouge
+Infrarouge > Détecteur infrarouge
 
 L298N / L293D > Pilotage de 2 moteurs CC
 
@@ -14,17 +14,17 @@ Led > Gestion de trois LED
 
 SG90 > Oscillateur pour balayage automatique d'un servomoteur</p>
 
-TELEMETRE LASER - TOF10120 > Fonctions pour l'utilisation du télémètre TOF10120
+TELEMETRE LASER - TOF10120 > Télémètre TOF10120
 
 Tension > Lecteur de tension 
 
-capteur_vitesse > Fonctions pour l'utilisation de capteur de vitesse optocoupleur
+capteur_vitesse > Capteur de vitesse optocoupleur
 
 dvr8833 > Pilotage de 2 moteurs CC 
 
-led_RGB > Fonctions pour l'utilisation de la Led RGB
+led_RGB > Led RGB
 
-shift_register > Fonction pour l'utilisation du registre à décalage SN74HC595N
+shift_register > Registre à décalage SN74HC595N
 
 <H3>** AGENT/VOITURE AUTONOME **</H3>
 
@@ -36,4 +36,4 @@ shift_register > Fonction pour l'utilisation du registre à décalage SN74HC595N
 Télécharger les répertoires individuellement à l'aide de l'outil <a href="https://download-directory.github.io/">https://download-directory.github.io/</a>
 <br>
 <br>
->> Développés avec l'IDE 1.8.8 à partir de avril 2020 par Frédérick MURAT - Expert en franglais - Licence GPLv3
+>> Développés par Frédérick MURAT - Expert en franglais &#128540; - Licence GPLv3
