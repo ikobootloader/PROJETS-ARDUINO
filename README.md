@@ -28,7 +28,7 @@ shift_register > Fonction pour l'utilisation du registre à décalage SN74HC595N
 
 <H3>** AGENT/VOITURE AUTONOME **</H3>
 
-<p><b>Projet de voiture autonome / adaptative pour Arduino UNO</b></p>
+<p><b>Projet de voiture autonome / adaptative pour Arduino UNO/NANO</b></p>
 
 <p>Ce projet est développé à l'aide des outils ci-dessus.</p>
 
