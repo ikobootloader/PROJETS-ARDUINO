@@ -66,16 +66,22 @@ void reactions(){
       switch(amplitude)
       {
         case 0 : DROITE; //5°
+                 i("gauche"); //COM WBSRVR
         break;
         case 1 : DROITE; //45°
+                 i("gauche"); //COM WBSRVR
         break;
         case 2 : GAUCHE; //90°
+                 i("droite"); //COM WBSRVR
         break;
         case 3 : GAUCHE; //135°
+                 i("droite"); //COM WBSRVR
         break;   
         case 4 : GAUCHE; //175°
+                 i("droite"); //COM WBSRVR
         break;     
         default : AVANCER;
+                 i("avancer"); //COM WBSRVR
       }
     }
 /***************************************************/
