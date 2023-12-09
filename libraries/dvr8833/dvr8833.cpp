@@ -42,8 +42,7 @@ void DVR8833::drive(uint8_t action)
 //ATTENTION > analogWrite déséquilibre la tension des moteurs : 1v de différence constaté
 void DVR8833::driveSpeed(uint8_t action,uint8_t vitesse)
 { //Vitesse de 50% à 100%
-  vitesse < 128 ? vitesse = 128 : vitesse;
-  vitesse > 255 ? vitesse = 255 : vitesse;
+  constrain(vitesse, 128, 255);
   //0=GAUCHE;1=DROITE;2=RECUL;3=AVANT;4=ARRET
   analogWrite(this->in1Pin != 255 ? this->in1Pin : _in1Pin, _tabDrive[action][0] == 255 ? _tabDrive[action][0] = vitesse : _tabDrive[action][0]);
   analogWrite(this->in2Pin != 255 ? this->in2Pin : _in2Pin, _tabDrive[action][1] == 255 ? _tabDrive[action][1] = vitesse : _tabDrive[action][1]);
