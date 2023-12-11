@@ -81,7 +81,7 @@ void allerA(float destinationX, float destinationY) {
   //1-Traitement Y
   //On compense l'incompréhension de l'Arduino sur la condition if((position.y * -1) - (destinationY * -1) == 0.0)
   if((position.y * -1) - (destinationY * -1) > -0.01 && (position.y * -1) - (destinationY * -1) < 0.01){
-    i("ok")
+    //i("ok")
     allerVersY = 1;
     changementDirection = 0;
   } 
@@ -102,7 +102,7 @@ void allerA(float destinationX, float destinationY) {
         tournerDroite();
         changementDirection++;
       }
-      avancer();
+      //avancer();
     }
   }
 
@@ -122,13 +122,13 @@ void allerA(float destinationX, float destinationY) {
         tournerGauche();
         changementDirection++;
       }
-      avancer();
+      //avancer();
     }
   }
 
   //2-Traitement X
   if((position.x * -1) - (destinationX * -1) > -0.01 && (position.x * -1) - (destinationX * -1) < 0.01){
-    i("ok")
+    //i("ok")
     allerVersX = 1;
     changementDirection = 0;
   } 
@@ -149,18 +149,18 @@ void allerA(float destinationX, float destinationY) {
         tournerDroite();
         changementDirection++;
       }
-      avancer();
+      //avancer();
     }
   }
 
   if(allerVersY == 1 && allerVersX != 1) {
     if (position.x > destinationX) {
       if(!changementDirection && axe == 0){ //haut
-        tournerDroite();
+        tournerGauche();
         changementDirection++;
       }else if(!changementDirection && axe == 1){ //droite
         tournerDroite();
-        tournerDroite();
+        tournerDroite(); 
         changementDirection++;
       }else if(!changementDirection && axe == 2){ //bas
         tournerDroite();
@@ -169,10 +169,11 @@ void allerA(float destinationX, float destinationY) {
         //Rien
         changementDirection++;
       }
-      avancer();
+      //avancer();
     }
   }
 }
+
 
 //Pouvoir définir un territoire restreint en déplacement
 //garder en mémoire les obstacles ?
