@@ -172,6 +172,12 @@ void allerA(float destinationX, float destinationY) {
       //avancer();
     }
   }
+  //LORSQUE L'AGENT EST AUX POSITIONS INDIQUEES, RESET L'ALGO
+  if(allerVersY == 1 && allerVersX == 1) {
+      allerVersY = 0;
+      allerVersX = 0;
+  }
+
 }
 
 
