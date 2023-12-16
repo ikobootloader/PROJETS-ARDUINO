@@ -4,6 +4,8 @@
 <p>Apprentissage par renforcement</p>
 <h1>ROBOT_TRAJECTOIRE_TEST</h1>
 <p>L'agent parcourt le territoire selon des coordonnées cartésiennes. L'agent peut atteindre une postion choisie.</p>
+<h1>ROBOT_TRAJECTOIRE_TEST_3</h1>
+<p>L'agent est guidé par le magnétomètre HMC5883L. Fonctionne partiellement. La boussole électronique est très sensible aux champs électromagnétiques.</p>
 
 <br>
 Télécharger les répertoires individuellement à l'aide de l'outil <a href="https://download-directory.github.io/">https://download-directory.github.io/</a>
