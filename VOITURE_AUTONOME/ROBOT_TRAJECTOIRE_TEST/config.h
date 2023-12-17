@@ -15,13 +15,12 @@ VOITURE_CONTROLES   VOITURE;
 #define DROITE VOITURE.locomotion(DROITE,255)
 #define ARRET VOITURE.locomotion(ARRET,0)
 /***************************************************/
-//CAPTEUR A ULTRASON
-#include <HCSR04.h>
-const unsigned char trigPin = 12;
-const unsigned char echoPin = 13;
+//CONTROLE DU TELEMETRE LASER TOF050C
+#include <Wire.h>
+#include "Adafruit_VL6180X.h"
+Adafruit_VL6180X laser = Adafruit_VL6180X();
 //DISTANCE MAX AUTORISEE AVANT REACTION
-const unsigned char maxDistance = 50; //30
-UltraSonicDistanceSensor ultrason(trigPin, echoPin);
+const unsigned short maxDistance = 254;
 /***************************************************/
 //POSITION ET TRAJECTOIRE
 #include "trajectoire.h"
@@ -29,7 +28,7 @@ UltraSonicDistanceSensor ultrason(trigPin, echoPin);
 //REACTIONS
 void reactions(){
       arret();
-      tournerDroite();
+      tournerDroite(90);
     }
 /***************************************************/
 #endif

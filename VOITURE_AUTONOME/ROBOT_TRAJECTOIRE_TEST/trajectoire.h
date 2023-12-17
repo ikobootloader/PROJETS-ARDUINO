@@ -8,10 +8,10 @@ struct Coordonnees {
   float x;  // AVANCER ET RECULER
   float y;  // GAUCHE ET DROITE
 };
-
 unsigned short axe = 0;           // AXE DE ROTATION // 0: vers le haut, 1: vers la droite, 2: vers le bas, 3: vers la gauche
 const float taillePas = 0.01;     // Taille du pas
 Coordonnees position = { 0, 0 };  // Initialiser les coordonnées à l'origine
+/***************************************************/
 
 void avancer() {
   AVANCER;
@@ -51,16 +51,41 @@ void reculer() {
   }
 }
 
-void tournerDroite() {
-  DROITE, delay(10);
+/***************************************************/
+
+//26 rot pour 90° si droite delai 30 et arret delai 100
+//26/90 = 0.288 rot par degré
+float etalon = 0.288;
+
+void tournerDroite(float degre) {
+  static int compteurD = 0;
+  degre = round(degre*etalon);//conversion
+  while(compteurD <= degre){
+    DROITE; 
+    delay(30);
+    ARRET;
+    delay(100);
+    compteurD++;
+  }
   i("droite")  //COM WBSRVR
-    axe = (axe + 1) % 4;
+  axe = (axe + 1) % 4;
+  compteurD = 0;
 }
 
-void tournerGauche() {
-  GAUCHE, delay(10);
+void tournerGauche(float degre) {
+  static int compteurG = 0;
+  degre = round(degre*etalon);//conversion
+  while(compteurG <= degre){
+    GAUCHE; 
+    delay(30);
+    ARRET;
+    delay(100);
+    compteurG++;
+  }
+  GAUCHE, delay(200);
   i("gauche")  //COM WBSRVR
     axe = (axe + 3) % 4;
+    compteurG = 0;
 }
 
 void arret() {
@@ -92,14 +117,14 @@ void allerA(float destinationX, float destinationY) {
         //rien
         changementDirection++;
       }else if(!changementDirection && axe == 1){ //droite
-        tournerGauche();
+        tournerGauche(90);
         changementDirection++;
       }else if(!changementDirection && axe == 2){ //bas
-        tournerDroite();
-        tournerDroite();
+        tournerDroite(90);
+        tournerDroite(90);
         changementDirection++;
       }else if(!changementDirection && axe == 3){ //gauche
-        tournerDroite();
+        tournerDroite(90);
         changementDirection++;
       }
       //avancer();
@@ -109,17 +134,17 @@ void allerA(float destinationX, float destinationY) {
   if(allerVersY != 1) {
     if (position.y > destinationY) {
       if(!changementDirection && axe == 0){ //haut
-        tournerDroite();
-        tournerDroite();
+        tournerDroite(90);
+        tournerDroite(90);
         changementDirection++;
       }else if(!changementDirection && axe == 1){ //droite
-        tournerDroite();
+        tournerDroite(90);
         changementDirection++;
       }else if(!changementDirection && axe == 2){ //bas
         //rien
         changementDirection++;
       }else if(!changementDirection && axe == 3){ //gauche
-        tournerGauche();
+        tournerGauche(90);
         changementDirection++;
       }
       //avancer();
@@ -136,17 +161,17 @@ void allerA(float destinationX, float destinationY) {
   if(allerVersY == 1 && allerVersX != 1) {
     if (position.x < destinationX) {
       if(!changementDirection && axe == 0){ //haut
-        tournerDroite();
+        tournerDroite(90);
         changementDirection++;
       }else if(!changementDirection && axe == 1){ //droite
         //Rien
         changementDirection++;
       }else if(!changementDirection && axe == 2){ //bas
-        tournerGauche();
+        tournerGauche(90);
         changementDirection++;
       }else if(!changementDirection && axe == 3){ //gauche
-        tournerDroite();
-        tournerDroite();
+        tournerDroite(90);
+        tournerDroite(90);
         changementDirection++;
       }
       //avancer();
@@ -156,14 +181,14 @@ void allerA(float destinationX, float destinationY) {
   if(allerVersY == 1 && allerVersX != 1) {
     if (position.x > destinationX) {
       if(!changementDirection && axe == 0){ //haut
-        tournerGauche();
+        tournerGauche(90);
         changementDirection++;
       }else if(!changementDirection && axe == 1){ //droite
-        tournerDroite();
-        tournerDroite(); 
+        tournerDroite(90);
+        tournerDroite(90); 
         changementDirection++;
       }else if(!changementDirection && axe == 2){ //bas
-        tournerDroite();
+        tournerDroite(90);
         changementDirection++;
       }else if(!changementDirection && axe == 3){ //gauche
         //Rien
@@ -180,7 +205,7 @@ void allerA(float destinationX, float destinationY) {
 
 }
 
-
+//A adapter pour un déplacement sur l'hypoténuse
 //Pouvoir définir un territoire restreint en déplacement
 //garder en mémoire les obstacles ?
 //garder en mémoire les points de recharge ?

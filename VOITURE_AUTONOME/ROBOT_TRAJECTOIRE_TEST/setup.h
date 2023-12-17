@@ -13,6 +13,7 @@ void setup() {
   *enBPin = 3; // Contrôle de vitesse PWM du moteur droit
   */
   VOITURE.setupPins();                //Paramétrage par défaut des moteurs
+  laser.begin();                      //Télémètre laser
   delay(2000);                        //Délai avant l'activation de la boucle loop()
 }
 /***************************************************/

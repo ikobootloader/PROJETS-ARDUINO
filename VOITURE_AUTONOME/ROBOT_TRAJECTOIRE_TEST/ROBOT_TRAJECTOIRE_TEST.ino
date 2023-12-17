@@ -3,19 +3,25 @@
 /***************************************************/
 #include "setup.h"
 /***************************************************/
+int counter = 0;
 
 void loop() {
-  //Si un obstacle est détecté par le capteur à ultrason, la fonction reactions() est utilisée sinon le robot avance
-  //ultrason.measureDistanceCm() >= 0 && ultrason.measureDistanceCm() <= maxDistance ? reactions() : avancer(); 
 
-  allerA(0.20,0.20);
-  
-  delay(500);
+  //Si un obstacle est détecté, la fonction reactions() est utilisée sinon le robot avance
+  laser.readRange() <= maxDistance? reactions() : avancer(); 
+  //tournerDroite(90);
+  delay(350);
 
+/**
+  Serial.print("counter: ");
+  i(counter)
   Serial.print("axe: ");
   i(axe)
   Serial.print("x: ");
   i(position.x)
   Serial.print("y: ");
   i(position.y)
+**/
+
+//delay(350);
 }
