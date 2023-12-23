@@ -132,7 +132,7 @@ void allerA(float destinationX, float destinationY) {
     //(y=y',-x)
     if(destinationY == position.y && destinationX < position.x) angleDestination = 270;
     //(-y,x=x')
-    if(destinationY < position.y && destinationX == position.x) angleDestination = 180;
+    if(destinationY < p //osition.y && destinationX == position.x) angleDestination = 180;
     //(y=y',x)
     if(destinationY == position.y && destinationX > position.x) angleDestination = 90;
 
