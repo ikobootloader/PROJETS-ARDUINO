@@ -56,10 +56,11 @@ void tournerDroite(float degre) {
     compteurD++;
   }
   i("droite")  //COM WBSRVR
-  unsigned short axeActuel = axe;
-  unsigned short axeNouveau = degre;
-  axeActuel = (axeActuel+axeNouveau)%360;
-  axe = axeActuel;
+  //conversion de la décimale en un entier (possibilité d'augmenter la précision avec multiple de 10 supérieur)
+  unsigned int axeActuel = axe*100;
+  unsigned int axeNouveau = degre*100;
+  axeActuel = (axeActuel+axeNouveau)%36000;
+  axe = axeActuel/100;
   compteurD = 0;
 }
 
@@ -74,10 +75,11 @@ void tournerGauche(float degre) {
     compteurG++;
   }
   i("gauche")  //COM WBSRVR
-  unsigned short axeActuel = axe;
-  unsigned short axeNouveau = degre;
-  axeActuel = (axeActuel-axeNouveau+360)%360;
-  axe = axeActuel;
+  //conversion de la décimale en un entier (possibilité d'augmenter la précision avec multiple de 10 supérieur)
+  unsigned int axeActuel = axe*100;
+  unsigned int axeNouveau = degre*100;
+  axeActuel = (axeActuel+axeNouveau)%36000;
+  axe = axeActuel/100;
   compteurG = 0;
 }
 
@@ -99,8 +101,8 @@ void allerA(float destinationX, float destinationY) {
   //hypoténuse √(→x² + →y²)
   /***/
   //Angle qui pointe vers la position de destination
-  float vecteurX = abs((position.x * -1) - (destinationX * -1));
-  float vecteurY = abs((position.y * -1) - (destinationY * -1));
+  float vecteurX = abs(position.x - destinationX);
+  float vecteurY = abs(position.y - destinationY);
 
   //Tangente
   float angleDestination = atan2(vecteurX,vecteurY) * 180 / PI;
@@ -132,7 +134,7 @@ void allerA(float destinationX, float destinationY) {
     //(y=y',-x)
     if(destinationY == position.y && destinationX < position.x) angleDestination = 270;
     //(-y,x=x')
-    if(destinationY < p //osition.y && destinationX == position.x) angleDestination = 180;
+    if(destinationY < position.y && destinationX == position.x) angleDestination = 180;
     //(y=y',x)
     if(destinationY == position.y && destinationX > position.x) angleDestination = 90;
 
