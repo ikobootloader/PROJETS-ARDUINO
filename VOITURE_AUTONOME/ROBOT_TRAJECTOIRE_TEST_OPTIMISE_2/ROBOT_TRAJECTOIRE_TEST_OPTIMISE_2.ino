@@ -11,11 +11,19 @@ void loop() {
   //laser.readRange() <= maxDistance? reactions() : avancer(axe); 
   //tournerDroite(90);
 
-  avancer(axe);
+  //avancer(axe);
 
- // allerA(0.20,0.60);
+  //tournerDroite(90);
+
+  allerA(1.50,0.80); //allerA(x,y)
 
   delay(350);
+
+  allerA(0.0,0.0); //allerA(x,y)
+
+  delay(350);
+
+  //tournerGauche(90);
 
 
   //Serial.print("counter: ");

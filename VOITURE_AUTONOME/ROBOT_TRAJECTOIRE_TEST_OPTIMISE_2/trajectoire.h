@@ -14,7 +14,7 @@ Coordonnees position = { 0, 0 };  // Initialiser les coordonnées à l'origine
 /***************************************************/
 
 void avancer(float orientation) {
-  //AVANCER;
+  AVANCER;
   i("avancer")  //COM WBSRVR
   // Conversion de degrés à radians
   float angle_radian = PI * orientation / 180.0;
@@ -27,7 +27,7 @@ void avancer(float orientation) {
 }
 
 void reculer(float orientation) {
-  //RECULER;
+  RECULER;
   i("reculer")  //COM WBSRVR
   // Conversion de degrés à radians
   float angle_radian = PI * orientation / 180.0;
@@ -49,7 +49,7 @@ void tournerDroite(float degre) {
   static int compteurD = 0;
   float rotationParDegre = round(degre*etalon);//conversion
   while(compteurD <= rotationParDegre){
-    //DROITE; 
+    DROITE; 
     delay(30);
     ARRET;
     delay(100);
@@ -68,7 +68,7 @@ void tournerGauche(float degre) {
   static int compteurG = 0;
   float rotationParDegre = round(degre*etalon);//conversion
   while(compteurG <= rotationParDegre){
-    //GAUCHE; 
+    GAUCHE; 
     delay(30);
     ARRET;
     delay(100);
@@ -112,59 +112,53 @@ void allerA(float destinationX, float destinationY) {
   static bool rot = 0;
 
   if(rot == 0){
-    //TESTS
+    //TEST
     Serial.print("Vecteur y: ");i(vecteurY)
     Serial.print("Vecteur x: ");i(vecteurX)
     Serial.print("Tangente en degré: ");i(angleDestination)
     Serial.print("Hypoténuse: ");i(hypotenuse)
     
     //Triangulation
-    //(y,x)
-    if(destinationY > position.y && destinationX > position.x) angleDestination = angleDestination; 
-    //(-y,x)
-    if(destinationY < position.y && destinationX > position.x) angleDestination = 180 - angleDestination; 
-    //(-y,-x)
-    if(destinationY < position.y && destinationX < position.x) angleDestination = 180 + angleDestination; 
-    //(y,-x)
-    if(destinationY > position.y && destinationX < position.x) angleDestination = 360 - angleDestination; 
+    if(destinationY > position.y && destinationX > position.x) angleDestination = angleDestination; //(y,x)
+    if(destinationY < position.y && destinationX > position.x) angleDestination = 180 - angleDestination; //(-y,x)
+    if(destinationY < position.y && destinationX < position.x) angleDestination = 180 + angleDestination; //(-y,-x)
+    if(destinationY > position.y && destinationX < position.x) angleDestination = 360 - angleDestination; //(y,-x)
 
-    //pas de triangulation
-    //(y,x=x')
-    if(destinationY > position.y && destinationX == position.x) angleDestination = 0;
-    //(y=y',-x)
-    if(destinationY == position.y && destinationX < position.x) angleDestination = 270;
-    //(-y,x=x')
-    if(destinationY < position.y && destinationX == position.x) angleDestination = 180;
-    //(y=y',x)
-    if(destinationY == position.y && destinationX > position.x) angleDestination = 90;
+    //pas de triangulation 
+    if(destinationY > position.y && destinationX == position.x) angleDestination = 0; //(y,x=x') 
+    if(destinationY == position.y && destinationX < position.x) angleDestination = 270; //(y=y',-x)
+    if(destinationY < position.y && destinationX == position.x) angleDestination = 180; //(-y,x=x')
+    if(destinationY == position.y && destinationX > position.x) angleDestination = 90; //(y=y',x)
 
+    //TEST
     Serial.print("Angle destination intégré : ");i(angleDestination)
 
     //Quantité de degré vers l'angle de destination
     float qteDegre = 0;
-    if(axe < angleDestination) qteDegre = angleDestination - axe;
-    if(axe > angleDestination) qteDegre = axe - angleDestination;
+    qteDegre = abs(angleDestination - axe);
 
+    //TEST
     Serial.print("quantité de degré de rotation : ");i(qteDegre)
 
     tournerDroite(qteDegre); //Tourner dans le sens horaire !
 
-/**
     //Suivre hypoténuse
-    static long avancement = 0;
+    static float avancement = 0.0;
     while(avancement <= hypotenuse){
+      //TEST
+      Serial.print("avancement = ");i(avancement)
       avancer(axe);
-      avancement++;
+      avancement += 0.01;
     }
-**/
+
     ARRET;
-    rot = 1;
-    //avancement = 0;
+    rot = 0;
+    avancement = 0.0;
   }
 
 
 //Attention à retrouver en temps réel les positions x et y pour le webserveur !
-//=>Doit-on faire adapter la taille du pas : Taille du pas*√2 ????
+//=>Doit-on adapter la taille du pas : Taille du pas*√2 ????
 //=>Réelle distance : hypoténuse*(taille du pas *√2)/taille du pas ???? A tester !
 }
 
