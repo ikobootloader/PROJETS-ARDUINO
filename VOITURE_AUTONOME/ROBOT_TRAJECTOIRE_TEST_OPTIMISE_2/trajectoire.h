@@ -129,7 +129,7 @@ void allerA(float destinationX, float destinationY) {
     //TODO: à optimiser !
     if(destinationY > position.y && destinationX > position.x) angleDestination = 360 + angleDestination; //(y,x)
     if(destinationY < position.y && destinationX > position.x) angleDestination = 360 + 180 - angleDestination; //(-y,x)
-    if(destinationY < position.y && destinationX < position.x) angleDestination = 180 + angleDestination; //(-y,-x)
+    if(destinationY < position.y && destinationX < position.x) angleDestination = 360 + 180 + angleDestination; //(-y,-x)
     if(destinationY > position.y && destinationX < position.x) angleDestination = 360 - angleDestination; //(y,-x)
 
     //pas de triangulation 
@@ -142,8 +142,8 @@ void allerA(float destinationX, float destinationY) {
     Serial.print("Angle destination intégré : ");i(angleDestination)
 
     //Quantité de degré vers l'angle de destination
-    float qteDegre = 0;
-    qteDegre = abs(angleDestination - axe);
+    int qteDegre = round(angleDestination) - round(axe);
+    qteDegre = (qteDegre + 360)%360;
     //TEST
     Serial.print("axe : ");i(axe)
     Serial.print("quantité de degré de rotation : ");i(qteDegre)
@@ -160,8 +160,8 @@ void allerA(float destinationX, float destinationY) {
       avancement += 0.01;
     }
 
-    position.x = destinationX;
-    position.y = destinationY;
+    //position.x = destinationX;
+    //position.y = destinationY;
 
     ARRET;
     rot = 0;
