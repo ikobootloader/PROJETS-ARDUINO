@@ -127,10 +127,10 @@ void allerA(float destinationX, float destinationY) {
     
     //Triangulation
     //TODO: à optimiser !
-    if(destinationY > position.y && destinationX > position.x) angleDestination = 360 + angleDestination; //(y,x)
-    if(destinationY < position.y && destinationX > position.x) angleDestination = 360 + 180 - angleDestination; //(-y,x)
-    if(destinationY < position.y && destinationX < position.x) angleDestination = 360 + 180 + angleDestination; //(-y,-x)
-    if(destinationY > position.y && destinationX < position.x) angleDestination = 360 - angleDestination; //(y,-x)
+    if(destinationY > position.y && destinationX > position.x) angleDestination = angleDestination; //(y,x)
+    if(destinationY < position.y && destinationX > position.x) angleDestination = 180 - angleDestination; //(-y,x)
+    if(destinationY < position.y && destinationX < position.x) angleDestination = 180 + angleDestination; //(-y,-x)
+    if(destinationY > position.y && destinationX < position.x) angleDestination = angleDestination*-1; //(y,-x)
 
     //pas de triangulation 
     if(destinationY > position.y && destinationX == position.x) angleDestination = 360; //(y,x=x') 
