@@ -6,17 +6,18 @@
 
 void loop() {
 
-  //Si un obstacle est détecté, la fonction reactions() est utilisée sinon le robot avance
-  laser.readRange() <= maxDistance? reactions() : avancer(axe);
-
-  delay(500);
+  reactionsObst();
+  reactionsChoc();
+  avancer(axe);
+  eviterObstacles(attente);
+  delay(350);
   
-  
+  /**
   Serial.print("axe: ");
   i(axe)
   Serial.print("x: ");
   i(position.x)
   Serial.print("y: ");
   i(position.y)
-
+  **/
 }

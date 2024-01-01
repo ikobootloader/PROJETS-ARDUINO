@@ -14,7 +14,7 @@ void setup() {
   */
   VOITURE.setupPins();                //Paramétrage par défaut des moteurs
   laser.begin();                      //Télémètre laser
-  delay(4000);                        //Délai avant l'activation de la boucle loop()
+  delay(2000);                        //Délai avant l'activation de la boucle loop()
 }
 /***************************************************/
 #endif

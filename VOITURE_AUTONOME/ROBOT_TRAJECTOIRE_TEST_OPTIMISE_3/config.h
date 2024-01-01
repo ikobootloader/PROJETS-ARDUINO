@@ -20,7 +20,29 @@ VOITURE_CONTROLES   VOITURE;
 #include "Adafruit_VL6180X.h"
 Adafruit_VL6180X laser = Adafruit_VL6180X();
 //DISTANCE MAX AUTORISEE AVANT REACTION
-const unsigned short maxDistance = 254;
+const unsigned char maxDistance = 254;
+/***************************************************/
+/**
+//TENSION
+#include <Tension.h>
+//ETAT DE LA BATTERIE
+#define tensionPile A6
+//Class  Ojbet
+TENSION  pile;
+//ETAT DE LA PLAQUE PHOTOVOLTAIQUE
+#define tensionPV A3
+//Class  Ojbet
+TENSION  PV;
+**/
+/***************************************************/
+//CAPTEUR DE CHOC
+#define choc A7
+//Récupérer l'intensité du choc'
+unsigned char capteurChoc(){
+  return analogRead(choc);
+}
+//INTENSITE DU CHOC MAX AUTORISEE AVANT REACTION
+const unsigned char maxChoc = 15;
 /***************************************************/
 //POSITION ET TRAJECTOIRE
 #include "trajectoire.h"

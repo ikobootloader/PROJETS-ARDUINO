@@ -160,7 +160,7 @@ void allerA(float destinationX, float destinationY) {
   }
 
   //TEST
-  i(stableHypotenuse)
+  //i(stableHypotenuse)
 
   //Suivre hypoténuse
   static float avancement = 0.0;
@@ -182,7 +182,6 @@ void allerA(float destinationX, float destinationY) {
 
 //TODO
 //Pouvoir définir un territoire restreint en déplacement
-//garder en mémoire les obstacles ?
 //garder en mémoire les points de recharge ?
 /***************************************************/
 #endif
