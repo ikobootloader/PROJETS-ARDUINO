@@ -10,12 +10,12 @@ struct Coordonnees {
 };
 float axe = 0; // AXE DE ROTATION 0° à 360°
 const float taillePas = 0.01;     // Taille du pas
-Coordonnees position = { 0, 0 };  // Initialiser les coordonnées à l'origine
+Coordonnees position = { 0.0, 0.0 };  // Initialiser les coordonnées à l'origine
 /***************************************************/
 
 void avancer(float orientation) {
   AVANCER;
-  Serial.print("avancer,");i(orientation)  //COM WBSRVR
+  Serial.print("avancer,");i(orientation) //COM WBSRVR
   // Conversion de degrés à radians
   float angle_radian = PI * orientation / 180.0;
   // Calcul des coordonnées x et y
@@ -28,8 +28,7 @@ void avancer(float orientation) {
 
 void reculer(float orientation) {
   RECULER;
-  //COM WBSRVR
-  Serial.print("reculer,");i(orientation) 
+  Serial.print("reculer,");i(orientation) //COM WBSRVR
   // Conversion de degrés à radians
   float angle_radian = PI * orientation / 180.0;
   // Calcul des coordonnées x et y
@@ -61,8 +60,7 @@ void tournerDroite(float degre) {
   unsigned int axeNouveau = degre*100;
   axeActuel = (axeActuel+axeNouveau)%36000;
   axe = axeActuel/100;
-  //COM WBSRVR
-  Serial.print("droite,");i(degre) 
+  Serial.print("droite,");i(degre) //COM WBSRVR
   compteurD = 0;
 }
 
@@ -81,8 +79,7 @@ void tournerGauche(float degre) {
   unsigned int axeNouveau = degre*100;
   axeActuel = (axeActuel-axeNouveau+36000)%36000;
   axe = axeActuel/100;
-  //COM WBSRVR
-  Serial.print("gauche,");i(degre) 
+  Serial.print("gauche,");i(degre) //COM WBSRVR
   compteurG = 0;
 }
 
@@ -109,18 +106,18 @@ void allerA(float destinationX, float destinationY) {
 
   if(rot == 0){
 
-  //Angle qui pointe vers la position de destination
-  float vecteurX = abs(position.x - destinationX);
-  float vecteurY = abs(position.y - destinationY);
+    //Angle qui pointe vers la position de destination
+    float vecteurX = abs(position.x - destinationX);
+    float vecteurY = abs(position.y - destinationY);
 
-  //Tangente
-  float angleDestination = 0;
-  angleDestination = atan(vecteurX/vecteurY) * 180 / PI;
-  //Trajectoire = hypoténuse
-  float hypotenuse = sqrt(pow(vecteurX,2.0)+pow(vecteurY,2.0));
+    //Tangente
+    float angleDestination = 0;
+    angleDestination = atan(vecteurX/vecteurY) * 180 / PI;
+    //Trajectoire = hypoténuse
+    float hypotenuse = sqrt(pow(vecteurX,2.0)+pow(vecteurY,2.0));
     
-    //TEST
     /**
+    //TEST
     Serial.print("Vecteur y: ");i(vecteurY)
     Serial.print("Vecteur x: ");i(vecteurX)
     Serial.print("Tangente en degré: ");i(angleDestination)

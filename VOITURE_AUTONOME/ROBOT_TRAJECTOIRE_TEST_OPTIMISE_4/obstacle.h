@@ -5,13 +5,13 @@
 //              GESTION DES OBSTACLES             //
 ////////////////////////////////////////////////////
 bool attente = 0; //Interrupteur process d'évitement
-float obstacles[150][2]; //Garder en mémoire les obstacles et les chocs pour les éviter
+float obstacles[100][2]; //Garder en mémoire les obstacles et les chocs pour les éviter
 /***************************************************/
 
 //Anticiper les positions 'obstacles' et les contourner 
 void eviterObstacles(){
   if(position.x != 0 && position.y != 0 && attente == 0){ //Si ce n'est pas la position de départ
-    for(unsigned short i = 0; i <= 150; i++){
+    for(unsigned short i = 0; i <= 100; i++){
       //TODO: à optimiser ! Arevoir, ne fonctionne pas correctement
       if(axe == 0){
         if(obstacles[i][0] == position.x && obstacles[i][1] == position.y+taillePas) tournerDroite(45); //(0,1)
@@ -52,7 +52,6 @@ void memoObstacles(){
   if(compterObstacles == 99) compterObstacles = 0;   
   Serial.print("obstacle,");i("")  //WBSVR
   delay(150);
-
   /**
   //TEST
   for(int q = 0; q < 20;q++){
@@ -62,21 +61,10 @@ void memoObstacles(){
   **/
 }
 
-//REACTIONS AUX OBSTACLES
+//REACTIONS AUX OBSTACLES ET CHOCS
 void reactionsObst(){
   //i("test rect obst")
-  if(laser.readRange() <= maxDistance){
-    memoObstacles(); // Mémorise l'endroit où se trouve l'obstacle
-    arret();
-    tournerDroite(90);
-    attente = 1; //eviterObstacles() doit attendre 1 pas avant de fonctionner
-  }
-}
-
-//REACTION AUX CHOCS
-void reactionsChoc(){
-  //i("test rect choc")
-  if(capteurChoc() >= maxChoc){
+  if(laser.readRange() <= maxDistance || capteurChoc() >= maxChoc){
     memoObstacles(); // Mémorise l'endroit où se trouve l'obstacle
     arret();
     tournerDroite(90);

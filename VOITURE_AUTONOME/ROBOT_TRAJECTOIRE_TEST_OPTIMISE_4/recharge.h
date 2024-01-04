@@ -6,8 +6,9 @@
 ////////////////////////////////////////////////////
 bool pileOK = 0; //Interrupteur d'activation du process de recharge
 float positionRecharge[3];//(x,y,volts)
-float tensionMinPPV = 4;
-float tensionMinBatterie = 7.5;
+float tensionMinPPV = 3; //4.5
+float tensionMinBatterie = 5.5; //7.5
+float tensionMaxBatterie = 7.0; //8.5
 /***************************************************/
 
 void gestionPPV(){ //0
@@ -20,20 +21,35 @@ void gestionPPV(){ //0
 }
 
 void gestionBatterie(){ //1
-  //Si la batterie est trop faible, on active le process de recharge
+  //Si la batterie est trop faible, on active le process d'accès au point de recharge connu
   if(batterie.tensionAcomparer(tensionMinBatterie, A6, 2) == true && pileOK == 0) pileOK = 1;
 }
 
 void pointRecharge(){ //2
-  //Si état pileOK = 1 > GOTO recharge ou cherche recharge
-  if(pileOK = 1 && positionRecharge[2] > 0){
-    if(positionRecharge[0] != position.x && positionRecharge[1] != position.y) allerA(positionRecharge[0],positionRecharge[1]);
-    if(positionRecharge[0] == position.x && positionRecharge[1] == position.y) ARRET;
+  //Si état pileOK = 1 > GOTO point de recharge connu ou cherche énergie
+  static bool stopallerA = 0; //Interrupteur à la fonction allerA()
+  if(pileOK == 1 && positionRecharge[2] > 0){
+    /**
+    //TEST
+    i("goto point de recharge")
+    Serial.print("position recharge x : "); i(positionRecharge[0])
+    Serial.print("position recharge y : "); i(positionRecharge[1])
+    **/
+    if(positionRecharge[0] != position.x && stopallerA == 0 || positionRecharge[1] != position.y && stopallerA == 0){
+        allerA(positionRecharge[0],positionRecharge[1]);
+    } 
+    if(positionRecharge[0] >= position.x-0.01 && positionRecharge[0] <= position.x+0.01 && positionRecharge[1] >= position.y-0.01 && positionRecharge[1] <= position.y+0.01){
+      ARRET;
+      stopallerA = 1;
+    } 
   }
-  else{
+  else if(pileOK == 1 && positionRecharge[2] == 0){
     avancer(axe); //Chercher un point de recharge
   }
-  if(batterie.lecture_tension(A6) >= 8.5) pileOK = 0;
+  if(batterie.lecture_tension(A6) >= tensionMaxBatterie){
+    pileOK = 0;
+    stopallerA = 0;
+  }
 }
 
 /***************************************************/
