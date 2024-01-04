@@ -1,10 +1,14 @@
 #ifndef recharge_H
 #define recharge_H
 /***************************************************/
+////////////////////////////////////////////////////
+//             GESTION DE LA RECHARGE             //
+////////////////////////////////////////////////////
 bool pileOK = 0; //Interrupteur d'activation du process de recharge
 float positionRecharge[3];//(x,y,volts)
-float tensionMinPPV = 4.5;
+float tensionMinPPV = 4;
 float tensionMinBatterie = 7.5;
+/***************************************************/
 
 void gestionPPV(){ //0
   if(PPV.tensionAcomparer(tensionMinPPV, A3, 0) == true && PPV.lecture_tension(A3) > positionRecharge[2]){
@@ -31,5 +35,6 @@ void pointRecharge(){ //2
   }
   if(batterie.lecture_tension(A6) >= 8.5) pileOK = 0;
 }
+
 /***************************************************/
 #endif

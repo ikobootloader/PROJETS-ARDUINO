@@ -7,10 +7,11 @@
 void loop() {
 
   gestionPPV();
+  gestionBatterie();
   reactionsObst();
   reactionsChoc();
-  eviterObstacles(attente);
-  avancer(axe);
+  eviterObstacles();
+  pileOK == 1 ? pointRecharge() : avancer(axe);
   delay(300);
   //i(laser.readRange())
   

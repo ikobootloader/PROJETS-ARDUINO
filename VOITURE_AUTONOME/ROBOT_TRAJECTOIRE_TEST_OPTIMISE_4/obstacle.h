@@ -1,15 +1,16 @@
 #ifndef obstacle_H
 #define obstacle_H
 /***************************************************/
-//GESTION DES OBSTACLES
-bool attente = 0; //Interrupteur
-
-//Garder en mémoire les obstacles et les chocs pour les éviter (99)
-float obstacles[150][2]; //A intégrer à la fonction memoObstacles()
+////////////////////////////////////////////////////
+//              GESTION DES OBSTACLES             //
+////////////////////////////////////////////////////
+bool attente = 0; //Interrupteur process d'évitement
+float obstacles[150][2]; //Garder en mémoire les obstacles et les chocs pour les éviter
+/***************************************************/
 
 //Anticiper les positions 'obstacles' et les contourner 
-void eviterObstacles(bool pose){
-  if(position.x != 0 && position.y != 0 && pose == 0){ //Si ce n'est pas la position de départ
+void eviterObstacles(){
+  if(position.x != 0 && position.y != 0 && attente == 0){ //Si ce n'est pas la position de départ
     for(unsigned short i = 0; i <= 150; i++){
       //TODO: à optimiser ! Arevoir, ne fonctionne pas correctement
       if(axe == 0){
@@ -82,5 +83,6 @@ void reactionsChoc(){
     attente = 1; //eviterObstacles() doit attendre 1 pas avant de fonctionner
   }
 }
+
 /***************************************************/
 #endif

@@ -116,7 +116,7 @@ void allerA(float destinationX, float destinationY) {
   //Tangente
   float angleDestination = 0;
   angleDestination = atan(vecteurX/vecteurY) * 180 / PI;
-  //Trajectoire : hypoténuse
+  //Trajectoire = hypoténuse
   float hypotenuse = sqrt(pow(vecteurX,2.0)+pow(vecteurY,2.0));
     
     //TEST
@@ -153,9 +153,7 @@ void allerA(float destinationX, float destinationY) {
     Serial.print("quantité de degré de rotation : ");i(qteDegre)
     **/
     tournerDroite(qteDegre); //Tourner dans le sens horaire !
-
     stableHypotenuse = hypotenuse;
-
     rot = 1; //STOPPER TRIANGLUATION
 
   }
@@ -181,8 +179,6 @@ void allerA(float destinationX, float destinationY) {
 
 }
 
-//TODO
-//Pouvoir définir un territoire restreint en déplacement
-//garder en mémoire les points de recharge ?
+//TODO : Pouvoir définir un territoire restreint en déplacement
 /***************************************************/
 #endif

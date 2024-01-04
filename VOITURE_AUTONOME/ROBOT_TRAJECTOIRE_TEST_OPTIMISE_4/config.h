@@ -29,12 +29,12 @@ TENSION  batterie,PPV;
 /***************************************************/
 //CAPTEUR DE CHOC
 #define choc A7
+//INTENSITE DU CHOC MAX AUTORISEE AVANT REACTION
+const unsigned char maxChoc = 15;
 //Récupérer l'intensité du choc'
 unsigned char capteurChoc(){
   return analogRead(choc);
 }
-//INTENSITE DU CHOC MAX AUTORISEE AVANT REACTION
-const unsigned char maxChoc = 15;
 /***************************************************/
 //POSITION ET TRAJECTOIRE
 #include "trajectoire.h"
