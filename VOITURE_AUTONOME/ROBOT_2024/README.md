@@ -273,7 +273,7 @@
   </v:shape><![endif]--><![if !vml]><img width=394 height=149
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/Branchements%20ESP01.PNG?raw=true"
   v:shapes="Image_x0020_14"><![endif]></span></p>
-  <p style="text-align:center">L'ESP-01S n'est pas indispensable au bon fonctionnement de l'agent.<br/> Il permet de suivre ses déplacements sur une page web. La page doit par ailleurs être ouverte avant que l'agent ne débute tout mouvement, sinon la trajectoire et/ou la direction indiquée risquent d'être incohérentes.<br/>Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br/>Plus d'explications sont fournies <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/VOITURE_AUTONOME/ROBOT_2024/ESP01_WEBSERVER" target="_blank">ici</a></p><br/>
+  <p style="text-align:center">L'ESP-01S n'est pas indispensable au bon fonctionnement de l'agent.<br/> Il permet de suivre ses déplacements sur une page web. La page doit être ouverte avant que l'agent ne débute tout mouvement, sinon la trajectoire et/ou la direction indiquée risquent d'être incohérentes.<br/>Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br/>Plus d'explications sont fournies <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/VOITURE_AUTONOME/ROBOT_2024/ESP01_WEBSERVER" target="_blank">ici</a></p><br/>
   </td>
  </tr>
 <tr style='mso-yfti-irow:22'>
