@@ -1,6 +1,6 @@
 <h1>ROBOT_2024</h1>
 
-<p><b>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</b></p>
+<p><b>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE DE FONCTIONNEMENT ET DE SECURITE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</b></p>
 
 <h2>Agent autonome</h2>
 <p>
@@ -384,6 +384,36 @@
   v:shapes="Image_x0020_16"><![endif]></span></p>
   </td>
   <td width=302 style='width:226.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=893 colspan=2 style='width:669.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Batterie
+  9V rechargeable<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23;mso-yfti-lastrow:yes'>
+  <td width=414 style='width:310.8pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-ligatures:none;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:126.75pt;
+   height:192pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image037.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=169 height=256
+  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image038.png"
+  v:shapes="Image_x0020_1"><![endif]></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+  </td>
+  <td width=478 style='width:358.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
