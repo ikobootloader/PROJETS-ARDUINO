@@ -135,7 +135,7 @@
    height:222.75pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image007.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=400 height=297
+  </v:shape><![endif]--><![if !vml]><img width=400 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true"
   v:shapes="Image_x0020_4"><![endif]></span></p>
   </td>
@@ -149,7 +149,7 @@
    height:195pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image009.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=463 height=260
+  </v:shape><![endif]--><![if !vml]><img width=463 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/Branchements%20LM293D.PNG?raw=true"
   v:shapes="Image_x0020_5"><![endif]></span></p>
   </td>
