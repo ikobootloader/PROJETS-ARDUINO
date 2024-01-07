@@ -26,6 +26,7 @@
    	<li>esp-01s</li>
    	<li>Panneau solaire 0.15w 5v</li>
    	<li>Adaptateur de type C vers USB 3.0</li>
+   <li>Batterie rechargeable 9V 650mAh</li>
   </ul>
 </p>
 
