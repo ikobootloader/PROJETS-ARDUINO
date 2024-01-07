@@ -15,18 +15,19 @@
 <h3>Composants utilisés</h3>
 <p>
   <ul>
-   	<li>Arduino nano</li>
-   	<li>Châssis + moteurs + roues</li>
-   	<li>Carte d'extension pour Arduino nano</li>
-   	<li>Module L293D</li>
-   	<li>Capteur de vibration</li>
-   	<li>Télémètre TOF050C</li>
-   	<li>Capteur de tension</li>
-   	<li>Booster de tension USB</li>
-   	<li>esp-01s</li>
-   	<li>Panneau solaire 0.15w 5v</li>
-   	<li>Adaptateur de type C vers USB 3.0</li>
-   <li>Batterie rechargeable 9V 650mAh</li>
+   	<li>1x Arduino nano</li>
+   	<li>1x Châssis + 2x moteurs + 2x roues + 1x roulette</li>
+   	<li>1x Carte d'extension pour Arduino nano</li>
+   	<li>1x Module L293D</li>
+   	<li>1x Capteur de vibration</li>
+   	<li>1x Télémètre TOF050C</li>
+   	<li>2x Capteurs de tension</li>
+   	<li>1x Booster de tension USB</li>
+   	<li>1x esp-01s</li>
+   	<li>2x Panneau solaire 0.15w 5v</li>
+   	<li>1x Adaptateur de type C vers USB 3.0</li>
+   <li>1x Batterie rechargeable 9V 650mAh</li>
+   <li>1x Connecteur de batterie 9V</li>
   </ul>
 </p>
 
