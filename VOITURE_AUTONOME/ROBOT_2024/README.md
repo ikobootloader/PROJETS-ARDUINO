@@ -7,27 +7,29 @@
  <ul>
   	<li>Déplacement libre</li>
    <li>Détection, mémorisation et évitement d'obstacles et de chocs</li>
-   <li>Rechargement de la batterie avec des plaques photovoltaïques</li>
+   <li>Rechargement de la batterie à l'énergie solaire</li>
    <li>Déplacement automatique vers des positions connues pour la recharge de la batterie</li>
  </ul>
 </p>
 
 <h3>Composants utilisés</h3>
-<p>
+<p><span>Les prix sont donnés à titre informatif en fonction de ceux pratiqués sur AliExpress au 01/24</span>
   <ul>
-   	<li>1x Arduino nano</li>
-   	<li>1x Châssis + 2x moteurs + 2x roues + 1x roulette</li>
-   	<li>1x Carte d'extension pour Arduino nano</li>
-   	<li>1x Module L293D</li>
-   	<li>1x Capteur de vibration</li>
-   	<li>1x Télémètre TOF050C</li>
-   	<li>2x Capteurs de tension</li>
-   	<li>1x Booster de tension USB</li>
-   	<li>1x ESP-01S</li>
-   	<li>2x Panneau solaire 0.15w 5v</li>
-   	<li>1x Adaptateur de type C vers USB 3.0</li>
-   <li>1x Batterie rechargeable 9V 650mAh</li>
-   <li>1x Connecteur de batterie 9V</li>
+   	<li>1x Arduino nano - env. 5€ pour une carte générique avec câble USB</li>
+   	<li>1x Châssis + 2x moteurs + 2x roues + 1x roulette - env. 9€ pour un kit complet</li>
+   	<li>1x Carte d'extension pour Arduino nano - env. 2.5€</li>
+   	<li>1x Module L293D - env. 3€</li>
+   	<li>1x Capteur de vibration - env. 1.5€</li>
+   	<li>1x Télémètre TOF050C - env. 3.5€</li>
+   	<li>2x Capteurs de tension - env. 2€</li>
+   	<li>1x Booster de tension USB - env. 2.5€</li>
+   	<li>1x ESP-01S - env. 2.5€</li>
+    <li>Module de programmation ESP-01 - env. 3.5€</li>
+   	<li>2x Panneau solaire 0.15w 5v - env. 5€</li>
+   	<li>1x Adaptateur de type C vers USB 3.0 - env. 2€</li>
+   <li>1x Batterie rechargeable 9V 650mAh - env. 6€</li>
+   <li>1x Connecteur de batterie 9V - env. 3.5€ par lot de 5</li>
+   <li>Plusieurs câbles Dupont 10 et 20 cm - env. 5€</li>
   </ul>
 </p>
 
@@ -233,7 +235,7 @@
   </v:shape><![endif]--><![if !vml]><img width=296 height=210
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
   v:shapes="Image_x0020_9"><![endif]></span></p>
-  <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 250mm sur 25°. Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
+  <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 50cm sur 25°. Toutefois, la bibilothèque Adafruit bride la réception du capteur à 255mm. A voir s'il existe une bibliothèque qui exploite davantage les caractéristiques du capteur.<br/>Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
   </td>
  </tr>
  <tr style='mso-yfti-irow:16'>
@@ -270,7 +272,36 @@
   </v:shape><![endif]--><![if !vml]><img width=394 height=149
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/Branchements%20ESP01.PNG?raw=true"
   v:shapes="Image_x0020_14"><![endif]></span></p>
-  <p style="text-align:center !important;">L'ESP-01S n'est pas indispensable au bon fonctionnement de l'agent.<br/> Il permet de suivre ses déplacements sur une page web. La page doit par ailleurs être ouverte avant que l'agent ne débute tout mouvement, sinon la trajectoire et/ou la direction indiquée risquent d'être incohérentes. <br/>Plus d'explications sont fournies <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/VOITURE_AUTONOME/ROBOT_2024/ESP01_WEBSERVER" target="_blank">ici</a></p><br/>
+  <p style="text-align:center">L'ESP-01S n'est pas indispensable au bon fonctionnement de l'agent.<br/> Il permet de suivre ses déplacements sur une page web. La page doit par ailleurs être ouverte avant que l'agent ne débute tout mouvement, sinon la trajectoire et/ou la direction indiquée risquent d'être incohérentes.<br/>Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br/>Plus d'explications sont fournies <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/VOITURE_AUTONOME/ROBOT_2024/ESP01_WEBSERVER" target="_blank">ici</a></p><br/>
+  </td>
+ </tr>
+<tr style='mso-yfti-irow:22'>
+  <td width=893 colspan=2 style='width:669.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><o:p>Module de programmation ESP-01</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23;mso-yfti-lastrow:yes'>
+  <td width=414 style='width:310.8pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-ligatures:none;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:126.75pt;
+   height:192pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image037.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=250
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9chargeur%20WIFI%20ESP-01%20ESP-01S/Module%20de%20programmation%20ESP-01.PNG?raw=true"
+  v:shapes="Image_x0020_1"><![endif]></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+  </td>
+  <td width=478 style='width:358.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p>Interrupteur à bascule intégré: côté UART pour voir la page web sur laquelle vous pourrez suivre la trajectoire de l'agent, PROG pour la programmation du firmware sur l'IDE Arduino.<br/>Ce module est très pratique! Un must have lorsque l'on possède un ESP-01.</o:p></p>
   </td>
  </tr>
 <tr style='mso-yfti-irow:12'>
