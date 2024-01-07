@@ -56,8 +56,7 @@
   <td width=478 style='width:358.5pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
   line-height:normal'><span style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
-  color:#1F2328'>Interrupteur à bascule intégré: côté UART pour voir la page
-  web sur laquelle vous pourrez suivre la trajectoire de l'agent, PROG pour la
+  color:#1F2328'>Interrupteur à bascule intégré: côté UART pour voir votre plateforme web sur une adresse IP du type 192.168.1.xx, PROG pour la
   programmation du firmware sur l'IDE Arduino.<br>
   Ce module est très pratique! Un must have lorsque l'on possède un ESP-01.</span></p>
   </td>
