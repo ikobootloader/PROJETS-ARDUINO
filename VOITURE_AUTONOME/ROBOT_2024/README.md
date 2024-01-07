@@ -25,10 +25,10 @@ Composants utilisés :
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Carte%20d'extension%20pour%20Arduino%20nano/Carte%20d'extension%20Arduino%20nano.PNG?raw=true" style="width:30%;"/></p>
 
 <h4>Module L293D</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true" style="width:30%;"/></p>
+<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true" style="width:50%;"/></p>
 
 <h4>Capteur de vibration</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Capture%20de%20vibration.PNG?raw=true" /></p>
+<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Capture%20de%20vibration.PNG?raw=true" style="width:30%;"/></p>
 
 <h4>Télémètre TOF050C</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/TOF050C_.PNG?raw=true" /></p>
