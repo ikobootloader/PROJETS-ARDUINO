@@ -150,7 +150,7 @@
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image009.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=463 height=260
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image009.png"
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/Branchements%20LM293D.PNG?raw=true"
   v:shapes="Image_x0020_5"><![endif]></span></p>
   </td>
  </tr>
@@ -187,7 +187,7 @@
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image016.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=319 height=175
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image016.png"
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"
   v:shapes="Image_x0020_7"><![endif]></span></p>
   </td>
  </tr>
@@ -224,7 +224,7 @@
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image018.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=296 height=210
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image018.png"
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
   v:shapes="Image_x0020_9"><![endif]></span></p>
   </td>
  </tr>
@@ -261,7 +261,7 @@
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image022.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=230 height=320
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image022.png"
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Branchements%20capteur%20de%20tension.PNG?raw=true"
   v:shapes="Image_x0020_11"><![endif]></span></p>
   </td>
  </tr>
@@ -327,7 +327,7 @@
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image029.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=394 height=149
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image029.png"
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/Branchements%20ESP01.PNG?raw=true"
   v:shapes="Image_x0020_14"><![endif]></span></p>
   </td>
  </tr>
@@ -393,41 +393,6 @@
  </tr>
 </table>
 
-
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true" style="width:30%;" /></p>
-
-<h4>Châssis + moteurs + roues</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Ch%C3%A2ssis%20+%20moteurs%20+%20roues/Ch%C3%A2ssis.PNG?raw=true" style="width:30%;"/></p>
-
-<h4>Carte d'extension pour Arduino nano</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Carte%20d'extension%20pour%20Arduino%20nano/Carte%20d'extension%20Arduino%20nano.PNG?raw=true" style="width:30%;"/></p>
-<p></p>
-
-<h4>Module L293D</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true" style="width:50%;"/></p>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"/></p>
-
-<h4>Capteur de vibration</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Capture%20de%20vibration.PNG?raw=true" style="width:30%;"/></p>
-
-<h4>Télémètre TOF050C</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/TOF050C_.PNG?raw=true" /></p>
-<p>Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a></p>
-
-<h4>Capteur de tension</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Capteur%20de%20tension.PNG?raw=true" style="width:30%;"/></p>
-
-<h4>Booster de tension USB</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Booster%20de%20tension%20USB%20d'%C3%A9nergie%200.9V%20~%205V%20%C3%A0%205V%20600MA/Booster%20de%20tension.PNG?raw=true" style="width:30%;"/></p>
-
-<h4>esp-01s</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/esp-01s.PNG?raw=true" style="width:30%;"/></p>
-
-<h4>Panneau solaire 0.15 w 5v</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Panneau%20solaire%20Mini%200.15%20w%205%20v%205330mm/Capture.PNG?raw=true" /></p>
-
-<h4>Adaptateur de type C vers USB 3.0</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Adaptateur%20de%20type%20C%20vers%20USB%203.0,%20USB%203.0%20m%C3%A2le%20vers%20type%20C%20m%C3%A2le/adaptateur%20usb.PNG?raw=true" style="width:30%;"/></p>
 <br>
 <br>
 Télécharger les répertoires individuellement à l'aide de l'outil <a href="https://download-directory.github.io/">https://download-directory.github.io/</a>
