@@ -13,21 +13,23 @@
 </p>
 
 <h3>Composants utilisés</h3>
-<p>
+<p><span>Les prix sont donnés à titre informatif en fonction de ceux pratiqués sur AliExpress au 01/24</span>
   <ul>
-   	<li>1x Arduino nano</li>
-   	<li>1x Châssis + 2x moteurs + 2x roues + 1x roulette</li>
-   	<li>1x Carte d'extension pour Arduino nano</li>
-   	<li>1x Module L293D</li>
-   	<li>1x Capteur de vibration</li>
-   	<li>1x Télémètre TOF050C</li>
-   	<li>2x Capteurs de tension</li>
-   	<li>1x Booster de tension USB</li>
-   	<li>1x ESP-01S</li>
+   	<li>1x Arduino nano - env. 5€ pour une carte générique avec câble USB</li>
+   	<li>1x Châssis + 2x moteurs + 2x roues + 1x roulette - env. 9€ pour un kit complet</li>
+   	<li>1x Carte d'extension pour Arduino nano - env. 2.5€</li>
+   	<li>1x Module L293D - env. 3€</li>
+   	<li>1x Capteur de vibration - env. 1.5€</li>
+   	<li>1x Télémètre TOF050C - env. 3.5€</li>
+   	<li>2x Capteurs de tension - env. 2€</li>
+   	<li>1x Booster de tension USB - env. 2.5€</li>
+   	<li>1x ESP-01S - env. 2.5€</li>
+    <li>Module de programmation ESP-01 - env. 3.5€</li>
    	<li>2x Panneau solaire 0.15w 5v</li>
-   	<li>1x Adaptateur de type C vers USB 3.0</li>
-   <li>1x Batterie rechargeable 9V 650mAh</li>
-   <li>1x Connecteur de batterie 9V</li>
+   	<li>1x Adaptateur de type C vers USB 3.0 - env. 2€</li>
+   <li>1x Batterie rechargeable 9V 650mAh - env. 6€</li>
+   <li>1x Connecteur de batterie 9V - env. 3.5€ par lot de 5</li>
+   <li>Plusieurs câbles Dupont 10 et 20 cm - env. 5€</li>
   </ul>
 </p>
 
