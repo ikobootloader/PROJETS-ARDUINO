@@ -1,6 +1,6 @@
 <h1>ROBOT_2024</h1>
 
-<p><b>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</b>b></p>
+<p><b>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</b></p>
 
 <h2>Agent autonome</h2>
 <p>
@@ -9,7 +9,7 @@
    <li>Détection, mémorisation et évitement d'obstacles et de chocs</li>
    <li>Détection d'énergie lumineuse</li>
    <li>Déplacement automatique vers des positions connues pour la recharge de la batterie</li>
- <ul>
+ </ul>
 </p>
 
 <h3>Composants utilisés</h3>
