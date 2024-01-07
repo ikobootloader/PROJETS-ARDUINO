@@ -409,8 +409,8 @@
    height:192pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image037.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=169 height=256
-  src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image038.png"
+  </v:shape><![endif]--><![if !vml]><img width=169
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Batterie%20rechargeable%209V%20650mAh%206F22/Batterie%209V%20650mAh.PNG?raw=true"
   v:shapes="Image_x0020_1"><![endif]></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
   </td>
   <td width=478 style='width:358.8pt;border-top:none;border-left:none;
