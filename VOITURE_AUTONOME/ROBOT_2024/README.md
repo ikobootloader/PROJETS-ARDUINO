@@ -32,6 +32,7 @@ Composants utilisés :
 
 <h4>Télémètre TOF050C</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/TOF050C_.PNG?raw=true" /></p>
+<p>Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a></p>
 
 <h4>Capteur de tension</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Capteur%20de%20tension.PNG?raw=true" style="width:30%;"/></p>
