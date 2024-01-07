@@ -30,11 +30,7 @@
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/raw/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/Branchements%20ESP01.PNG?raw=true"></span></a></span></p>
   <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:center;
   line-height:normal'><span style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
-  color:#1F2328'>L'ESP-01S n'est pas indispensable au bon fonctionnement de
-  l'agent.<br>
-  Il permet de suivre ses déplacements sur une page web. La page doit être ouverte avant que l'agent ne débute tout mouvement, sinon la
-  trajectoire et/ou la direction indiquée risquent d'être incohérentes.<br>
-  Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br></span></p>
+  color:#1F2328'>Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br></span></p>
   </td>
  </tr>
  <tr>
