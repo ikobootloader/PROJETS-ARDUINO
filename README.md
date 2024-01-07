@@ -1,5 +1,7 @@
 <H1>arduino</H1>
 
+<p style="font-weight:bold;"><B>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</B></p>
+
 <h3>Bibliothèques d'outils</h3>
 
 <p>EEPROM > Fonctions pour l'utilisation de la puce 24LC256
