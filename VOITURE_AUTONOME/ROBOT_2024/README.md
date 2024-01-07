@@ -16,7 +16,7 @@ Composants utilisés :
 </ul>
 
 <h4>Arduino nano</h4>
-<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true" /></p>
+<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true" style="height:50%;width:50%;" /></p>
 
 <h4>Châssis + moteurs + roues</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Ch%C3%A2ssis%20+%20moteurs%20+%20roues/Ch%C3%A2ssis.PNG?raw=true" /></p>
