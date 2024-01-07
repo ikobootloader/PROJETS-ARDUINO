@@ -1,4 +1,7 @@
 <h1>ROBOT_2024</h1>
+
+<p style="font-weight:bold;">AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</p>
+
 Composants utilisés :
 <br>
 <ul>
@@ -23,6 +26,7 @@ Composants utilisés :
 
 <h4>Carte d'extension pour Arduino nano</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Carte%20d'extension%20pour%20Arduino%20nano/Carte%20d'extension%20Arduino%20nano.PNG?raw=true" style="width:30%;"/></p>
+<p></p>
 
 <h4>Module L293D</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true" style="width:50%;"/></p>
