@@ -44,7 +44,7 @@
   <td width=302 valign=top style='width:226.55pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><o:p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/raw/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true" style="width: 30%; max-width: 100%;"></o:p></p>
   </td>
   <td width=302 valign=top style='width:226.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
