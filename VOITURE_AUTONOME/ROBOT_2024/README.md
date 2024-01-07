@@ -7,7 +7,7 @@
  <ul>
   	<li>Déplacement libre</li>
    <li>Détection, mémorisation et évitement d'obstacles et de chocs</li>
-   <li>Rechargement de la batterie avec une plaque photovoltaïque</li>
+   <li>Rechargement de la batterie avec des plaques photovoltaïques</li>
    <li>Déplacement automatique vers des positions connues pour la recharge de la batterie</li>
  </ul>
 </p>
@@ -23,7 +23,7 @@
    	<li>1x Télémètre TOF050C</li>
    	<li>2x Capteurs de tension</li>
    	<li>1x Booster de tension USB</li>
-   	<li>1x esp-01s</li>
+   	<li>1x ESP-01S</li>
    	<li>2x Panneau solaire 0.15w 5v</li>
    	<li>1x Adaptateur de type C vers USB 3.0</li>
    <li>1x Batterie rechargeable 9V 650mAh</li>
@@ -50,36 +50,6 @@
   line-height:normal'><span style='mso-no-proof:yes'><img width=294 height=246
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true"
   v:shapes="Image_x0020_1"><![endif]></span></p>
-  </td>
-  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Châssis +
-  moteurs + roues<o:p></o:p></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
-  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Image_x0020_2" o:spid="_x0000_i1039" type="#_x0000_t75" style='width:205.5pt;
-   height:176.25pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image003.png"
-    o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=274 height=235
-  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Ch%C3%A2ssis%20+%20moteurs%20+%20roues/Ch%C3%A2ssis.PNG?raw=true"
-  v:shapes="Image_x0020_2"><![endif]></span></p>
   </td>
   <td width=302 style='width:226.55pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -119,6 +89,36 @@
   line-height:normal'><o:p>&nbsp;</o:p></p>
   </td>
  </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Châssis +
+  moteurs + roues<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_2" o:spid="_x0000_i1039" type="#_x0000_t75" style='width:205.5pt;
+   height:176.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image003.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=274 height=235
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Ch%C3%A2ssis%20+%20moteurs%20+%20roues/Ch%C3%A2ssis.PNG?raw=true"
+  v:shapes="Image_x0020_2"><![endif]></span></p>
+  </td>
+  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p></o:p></p>
+  </td>
+ </tr>
  <tr style='mso-yfti-irow:6'>
   <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
@@ -154,6 +154,8 @@
   </v:shape><![endif]--><![if !vml]><img width=463 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/Branchements%20LM293D.PNG?raw=true"
   v:shapes="Image_x0020_5"><![endif]></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p>Utiliser la bibliothèque <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/libraries/L298N/Voiture" heref="_blank">Voiture</a>.<br/>Si l'un des moteurs ou les 2 ne tournent pas dans le bon sens, il faut intervertir les connexions A-|A+ et/ou B-|B+ sur le module Module L293D.</o:p></p><br/>
   </td>
  </tr>
  <tr style='mso-yfti-irow:8'>
@@ -183,14 +185,17 @@
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+  line-height:normal'>
+  <span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
    id="Image_x0020_7" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:239.25pt;
    height:131.25pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image016.png"
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=319 height=175
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"
-  v:shapes="Image_x0020_7"><![endif]></span></p>
+  v:shapes="Image_x0020_7"><![endif]></span>
+  <p style="text-align:center;">Le potentiomètre du capteur de vibration est réglée au minimum.<br/>Parfois, une valeur élevée - peut-être d'origine acoustique? - fait que l'agent perçoit un choc qui n'a pas eu lieu.</p>
+  </p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:10'>
@@ -228,73 +233,7 @@
   </v:shape><![endif]--><![if !vml]><img width=296 height=210
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
   v:shapes="Image_x0020_9"><![endif]></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:12'>
-  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Capteur de
-  tension<o:p></o:p></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:13'>
-  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
-  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Image_x0020_10" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:201.75pt;
-   height:203.25pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image020.png"
-    o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=269 height=271
-  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Capteur%20de%20tension.PNG?raw=true"
-  v:shapes="Image_x0020_10"><![endif]></span></p>
-  </td>
-  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Image_x0020_11" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:172.5pt;
-   height:240pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image022.png"
-    o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=230 height=320
-  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Branchements%20capteur%20de%20tension.PNG?raw=true"
-  v:shapes="Image_x0020_11"><![endif]></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:14'>
-  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Booster de
-  tension USB<o:p></o:p></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:15'>
-  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
-  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Image_x0020_12" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:206.25pt;
-   height:136.5pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image023.png"
-    o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=275 height=182
-  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Booster%20de%20tension%20USB%20d'%C3%A9nergie%200.9V%20~%205V%20%C3%A0%205V%20600MA/Booster%20de%20tension.PNG?raw=true"
-  v:shapes="Image_x0020_12"><![endif]></span></p>
-  </td>
-  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><o:p>&nbsp;</o:p></p>
+  <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 250mm sur 25°. Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
   </td>
  </tr>
  <tr style='mso-yfti-irow:16'>
@@ -333,12 +272,49 @@
   v:shapes="Image_x0020_14"><![endif]></span></p>
   </td>
  </tr>
+<tr style='mso-yfti-irow:12'>
+  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Capteur de
+  tension<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_10" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:201.75pt;
+   height:203.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image020.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=269 height=271
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Capteur%20de%20tension.PNG?raw=true"
+  v:shapes="Image_x0020_10"><![endif]></span></p>
+  </td>
+  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_11" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:172.5pt;
+   height:240pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image022.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=230 height=320
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Branchements%20capteur%20de%20tension.PNG?raw=true"
+  v:shapes="Image_x0020_11"><![endif]></span></p>
+  </td>
+ </tr>
  <tr style='mso-yfti-irow:18'>
   <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Panneau
-  solaire 0.15w 5v<o:p></o:p></b></p>
+  solaire 5V 0.15W<o:p></o:p></b></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:19'>
@@ -354,6 +330,36 @@
   </v:shape><![endif]--><![if !vml]><img width=140 height=122
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Panneau%20solaire%20Mini%200.15%20w%205%20v%205330mm/Capture.PNG?raw=true"
   v:shapes="Image_x0020_15"><![endif]></span></p>
+  </td>
+  <td width=302 style='width:226.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p>2 panneaux solaires 5V sont branchés en parallèle pour augmenter le courant (0.03*2 A). <br>Ces panneaux n'ont pas été testés à leur plein potentiel mais les premiers tests indiquent que le courant est insuffisant pour le booster de tension et donc pour recharger la batterie.</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Booster de
+  tension USB 0.9V à 5V -> 5V stable<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=302 style='width:226.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_12" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:206.25pt;
+   height:136.5pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image023.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=275 height=182
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Booster%20de%20tension%20USB%20d'%C3%A9nergie%200.9V%20~%205V%20%C3%A0%205V%20600MA/Booster%20de%20tension.PNG?raw=true"
+  v:shapes="Image_x0020_12"><![endif]></span></p>
   </td>
   <td width=302 style='width:226.55pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -397,8 +403,7 @@
   <td width=893 colspan=2 style='width:669.6pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Batterie
-  9V rechargeable<o:p></o:p></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Batterie rechargeable 9V 650mAh<o:p></o:p></b></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:23;mso-yfti-lastrow:yes'>
@@ -413,6 +418,35 @@
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=169
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Batterie%20rechargeable%209V%20650mAh%206F22/Batterie%209V%20650mAh.PNG?raw=true"
+  v:shapes="Image_x0020_1"><![endif]></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+  </td>
+  <td width=478 style='width:358.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=893 colspan=2 style='width:669.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Connecteur de Batterie 9V<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23;mso-yfti-lastrow:yes'>
+  <td width=414 style='width:310.8pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span style='mso-ligatures:none;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Image_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:126.75pt;
+   height:192pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image037.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=169
+  src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Connecteur%20de%20batterie%209V/Connecteur%20de%20batterie%209v.PNG?raw=true"
   v:shapes="Image_x0020_1"><![endif]></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
   </td>
   <td width=478 style='width:358.8pt;border-top:none;border-left:none;
