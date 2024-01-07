@@ -12,21 +12,22 @@
  <ul>
 </p>
 
-Composants utilisés :
-<br>
-<ul>
- 	<li>Arduino nano</li>
- 	<li>Châssis + moteurs + roues</li>
- 	<li>Carte d'extension pour Arduino nano</li>
- 	<li>Module L293D</li>
- 	<li>Capteur de vibration</li>
- 	<li>Télémètre TOF050C</li>
- 	<li>Capteur de tension</li>
- 	<li>Booster de tension USB</li>
- 	<li>esp-01s</li>
- 	<li>Panneau solaire 0.15 w 5v</li>
- 	<li>Adaptateur de type C vers USB 3.0</li>
-</ul>
+<h3>Composants utilisés</h3>
+<p>
+  <ul>
+   	<li>Arduino nano</li>
+   	<li>Châssis + moteurs + roues</li>
+   	<li>Carte d'extension pour Arduino nano</li>
+   	<li>Module L293D</li>
+   	<li>Capteur de vibration</li>
+   	<li>Télémètre TOF050C</li>
+   	<li>Capteur de tension</li>
+   	<li>Booster de tension USB</li>
+   	<li>esp-01s</li>
+   	<li>Panneau solaire 0.15 w 5v</li>
+   	<li>Adaptateur de type C vers USB 3.0</li>
+  </ul>
+</p>
 
 <h4>Arduino nano</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true" style="width:30%;" /></p>
