@@ -193,16 +193,16 @@
     o:title=""/>
   </v:shape><![endif]--><![if !vml]><img width=319 height=175
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"
-  v:shapes="Image_x0020_7"><![endif]></span>
+  v:shapes="Image_x0020_7"><![endif]></span></p>
   <p style="text-align:center;">Le potentiomètre du capteur de vibration est réglée au minimum.<br/>Parfois, une valeur élevée - peut-être d'origine acoustique? - fait que l'agent perçoit un choc qui n'a pas eu lieu.</p>
-  </p>
+  
   </td>
  </tr>
  <tr style='mso-yfti-irow:10'>
   <td width=604 colspan=2 valign=top style='width:453.1pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Télémètre
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Télémètre laser
   TOF050C<o:p></o:p></b></p>
   </td>
  </tr>
