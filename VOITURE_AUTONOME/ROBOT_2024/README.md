@@ -25,7 +25,7 @@
    	<li>1x Booster de tension USB - env. 2.5€</li>
    	<li>1x ESP-01S - env. 2.5€</li>
     <li>Module de programmation ESP-01 - env. 3.5€</li>
-   	<li>2x Panneau solaire 0.15w 5v</li>
+   	<li>2x Panneau solaire 0.15w 5v - env. 5€</li>
    	<li>1x Adaptateur de type C vers USB 3.0 - env. 2€</li>
    <li>1x Batterie rechargeable 9V 650mAh - env. 6€</li>
    <li>1x Connecteur de batterie 9V - env. 3.5€ par lot de 5</li>
