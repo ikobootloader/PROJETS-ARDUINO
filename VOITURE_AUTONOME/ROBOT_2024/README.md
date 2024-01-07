@@ -41,6 +41,7 @@
 
 <h4>Module L293D</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/L293D.PNG?raw=true" style="width:50%;"/></p>
+<p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"/></p>
 
 <h4>Capteur de vibration</h4>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Capture%20de%20vibration.PNG?raw=true" style="width:30%;"/></p>
