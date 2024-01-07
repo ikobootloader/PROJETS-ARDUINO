@@ -197,7 +197,7 @@
   </v:shape><![endif]--><![if !vml]><img width=319 height=175
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"
   v:shapes="Image_x0020_7"><![endif]></span></p>
-  <p style="text-align:center;">Le potentiomètre du capteur de vibration est réglée au minimum.<br/>Parfois, une valeur élevée parasite fait que l'agent perçoit un choc qui n'a pas eu lieu.</p>
+  <p style="text-align:center;">Le potentiomètre du capteur de vibration est réglée au minimum.<br/>Parfois, une valeur parasite élevée fait que l'agent perçoit un choc qui n'a pas eu lieu.</p>
   
   </td>
  </tr>
