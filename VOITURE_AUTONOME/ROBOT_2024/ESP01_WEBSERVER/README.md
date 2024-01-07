@@ -1,6 +1,6 @@
 <h1>ROBOT_2024</h1>
 
-<p><b>ATTENTION : Il faut déplacer le répertoire ESP01_WEBSERVER/ en-dehors du répertoire ROBOT_2024/</b></p>
+<p><b>ATTENTION! : Il faut déplacer le répertoire ESP01_WEBSERVER/ en-dehors du répertoire ROBOT_2024/</b></p>
 
 <h2>WEBSERVEUR</h2>
 
