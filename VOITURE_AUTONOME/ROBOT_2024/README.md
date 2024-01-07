@@ -7,7 +7,7 @@
  <ul>
   	<li>Déplacement libre</li>
    <li>Détection, mémorisation et évitement d'obstacles et de chocs</li>
-   <li>Détection d'énergie lumineuse</li>
+   <li>Rechargement de la batterie avec une plaque photovoltaïque</li>
    <li>Déplacement automatique vers des positions connues pour la recharge de la batterie</li>
  </ul>
 </p>
