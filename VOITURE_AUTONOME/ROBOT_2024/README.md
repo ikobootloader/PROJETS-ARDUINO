@@ -50,7 +50,7 @@
   none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><img width=294 height=246
+  line-height:normal'><span style='mso-no-proof:yes'><img width=294 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Arduino%20nano/Arduino%20nano.PNG?raw=true"
   v:shapes="Image_x0020_1"><![endif]></span></p>
   </td>
@@ -80,7 +80,7 @@
    height:193.5pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image005.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=298 height=258
+  </v:shape><![endif]--><![if !vml]><img width=298 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Carte%20d'extension%20pour%20Arduino%20nano/Carte%20d'extension%20Arduino%20nano.PNG?raw=true"
   v:shapes="Image_x0020_3"><![endif]></span></p>
   </td>
@@ -110,7 +110,7 @@
    height:176.25pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image003.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=274 height=235
+  </v:shape><![endif]--><![if !vml]><img width=274 
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Ch%C3%A2ssis%20+%20moteurs%20+%20roues/Ch%C3%A2ssis.PNG?raw=true"
   v:shapes="Image_x0020_2"><![endif]></span></p>
   </td>
@@ -179,7 +179,7 @@
    height:213pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image014.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=294 height=284
+  </v:shape><![endif]--><![if !vml]><img width=294
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Capture%20de%20vibration.PNG?raw=true"
   v:shapes="Image_x0020_6"><![endif]></span></p>
   </td>
@@ -194,7 +194,7 @@
    height:131.25pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image016.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=319 height=175
+  </v:shape><![endif]--><![if !vml]><img width=319
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Capteur%20de%20vibration/Branchements%20capteur%20de%20vibration.PNG?raw=true"
   v:shapes="Image_x0020_7"><![endif]></span></p>
   <p style="text-align:center;">Le potentiomètre du capteur de vibration est réglée au minimum.<br/>Parfois, une valeur parasite élevée fait que l'agent perçoit un choc qui n'a pas eu lieu.</p>
@@ -219,7 +219,7 @@
    height:1in;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image017.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=174 height=96
+  </v:shape><![endif]--><![if !vml]><img width=174
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/TOF050C_.PNG?raw=true"
   v:shapes="Image_x0020_8"><![endif]></span></p>
   </td>
@@ -233,7 +233,7 @@
    height:157.5pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image018.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=296 height=210
+  </v:shape><![endif]--><![if !vml]><img width=296
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
   v:shapes="Image_x0020_9"><![endif]></span></p>
   <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 50cm sur 25°. Toutefois, la bibilothèque Adafruit bride la réception du capteur à 255mm. A voir s'il existe une bibliothèque qui exploite davantage les caractéristiques du capteur.<br/>Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
@@ -256,7 +256,7 @@
    height:120.75pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image027.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=188 height=161
+  </v:shape><![endif]--><![if !vml]><img width=188
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/esp-01s.PNG?raw=true"
   v:shapes="Image_x0020_13"><![endif]></span></p>
   </td>
@@ -270,7 +270,7 @@
    height:111.75pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image029.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=394 height=149
+  </v:shape><![endif]--><![if !vml]><img width=394
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/esp-01s/Branchements%20ESP01.PNG?raw=true"
   v:shapes="Image_x0020_14"><![endif]></span></p>
   <p style="text-align:center">L'ESP-01S n'est pas indispensable au bon fonctionnement de l'agent. Il permet de suivre ses déplacements sur une page web. La page doit être ouverte avant que l'agent ne débute tout mouvement, sinon la trajectoire et/ou la direction indiquée risquent d'être incohérentes.<br/>Un programme doit être téléversé sur l'ESP-01S pour qu'il soit opérationnel.<br/>Plus d'explications sont fournies <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/VOITURE_AUTONOME/ROBOT_2024/ESP01_WEBSERVER" target="_blank">ici</a></p><br/>
@@ -323,7 +323,7 @@
    height:203.25pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image020.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=269 height=271
+  </v:shape><![endif]--><![if !vml]><img width=269
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Capteur%20de%20tension.PNG?raw=true"
   v:shapes="Image_x0020_10"><![endif]></span></p>
   </td>
@@ -337,7 +337,7 @@
    height:240pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image022.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=230 height=320
+  </v:shape><![endif]--><![if !vml]><img width=230
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Module%20de%20capteur%20de%20tension%20Standard%20DC%200-25V/Branchements%20capteur%20de%20tension.PNG?raw=true"
   v:shapes="Image_x0020_11"><![endif]></span></p>
   </td>
@@ -360,7 +360,7 @@
    height:91.5pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image030.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=140 height=122
+  </v:shape><![endif]--><![if !vml]><img width=140
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Panneau%20solaire%20Mini%200.15%20w%205%20v%205330mm/Capture.PNG?raw=true"
   v:shapes="Image_x0020_15"><![endif]></span></p>
   </td>
@@ -390,7 +390,7 @@
    height:136.5pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image023.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=275 height=182
+  </v:shape><![endif]--><![if !vml]><img width=275
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Booster%20de%20tension%20USB%20d'%C3%A9nergie%200.9V%20~%205V%20%C3%A0%205V%20600MA/Booster%20de%20tension.PNG?raw=true"
   v:shapes="Image_x0020_12"><![endif]></span></p>
   </td>
@@ -420,7 +420,7 @@
    height:201pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image031.png"
     o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=301 height=268
+  </v:shape><![endif]--><![if !vml]><img width=301
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Adaptateur%20de%20type%20C%20vers%20USB%203.0,%20USB%203.0%20m%C3%A2le%20vers%20type%20C%20m%C3%A2le/adaptateur%20usb.PNG?raw=true"
   v:shapes="Image_x0020_16"><![endif]></span></p>
   </td>
