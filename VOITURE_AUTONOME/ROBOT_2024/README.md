@@ -228,14 +228,10 @@
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Image_x0020_9" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:222pt;
-   height:157.5pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="BRANCHEMENTS%20ET%20COMPOSANTS%20ROBOT_2024_fichiers/image018.png"
-    o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=296
+  line-height:normal'><span style='mso-no-proof:yes'>
+   <img width=296
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
-  v:shapes="Image_x0020_9"><![endif]></span></p>
+  v:shapes="Image_x0020_9"></span></p>
   <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 50cm sur 25°. Toutefois, la bibilothèque Adafruit bride la réception du capteur à 255mm. A voir s'il existe une bibliothèque qui exploite davantage les caractéristiques du capteur.<br/>Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
   </td>
  </tr>
