@@ -13,6 +13,17 @@
  </ul>
 </p>
 
+<h3>Statut du projet</h3>
+<p>Prototype en cours de développement. La version actuellement disponible effectue les opérations décrites ci-dessus.</p>
+
+<h3>Difficultés</h3>
+<ul>
+ <li>Problème d'interprétation du type float</li>
+ <li>Manque de précision du fait de la valeur étalon. L'utilisation d'un compas serait un plus.</li>
+ <li>Variations entre la trajectoire affichée sur la page web et celle de l'agent.</li>
+ <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire demande davantage de tests.</li>
+</ul>
+
 <h3>Composants utilisés</h3>
 <p><span>Les prix sont donnés à titre informatif en fonction de ceux pratiqués sur AliExpress au 01/24</span>
   <ul>
@@ -35,7 +46,6 @@
   </ul>
 </p>
 
-<h4>Arduino nano</h4>
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
