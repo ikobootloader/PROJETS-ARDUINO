@@ -21,7 +21,7 @@
  <li>Problème d'interprétation du type float</li>
  <li>Manque de précision du fait de la valeur étalon. L'utilisation d'une boussole serait un plus.</li>
  <li>Variations entre la trajectoire affichée sur la page web et celle de l'agent.</li>
- <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire demande davantage de tests.</li>
+ <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire pourrait être affiné.</li>
 </ul>
 
 <h3>Composants utilisés</h3>
