@@ -30,7 +30,7 @@
    	<li>1x Adaptateur de type C vers USB 3.0 - env. 2€</li>
    <li>1x Batterie rechargeable 9V 650mAh - env. 6€</li>
    <li>1x Connecteur de batterie 9V - env. 3.5€ par lot de 5</li>
-   <li>Plusieurs câbles Dupont 10 et 20 cm - env. 5€</li>
+   <li>Plusieurs câbles Dupont 10 et 20 cm M/M M/F F/F - env. 5€ ou +</li>
    <li>Entretoises et vis M3 - env. 5€</li>
   </ul>
 </p>
