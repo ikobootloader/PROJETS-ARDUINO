@@ -18,9 +18,10 @@
 
 <h3>Difficultés</h3>
 <ul>
- <li>Problème d'interprétation du type float</li>
+ <li>Problème d'interprétation du type float.</li>
  <li>Manque de précision du fait de la valeur étalon. L'utilisation d'une boussole serait un plus.</li>
  <li>Variations entre la trajectoire affichée sur la page web et celle de l'agent.</li>
+ <li>Limite d'enregistrements des obstacles en mémoire.</li>
  <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire pourrait être affiné.</li>
 </ul>
 
