@@ -11,33 +11,33 @@ float obstacles[100][2]; //Garder en mémoire les obstacles et les chocs pour le
 //Anticiper les positions 'obstacles' et les contourner 
 void eviterObstacles(){
   if(position.x != 0.00f && position.y != 0.00f && attente == 0){ //Si ce n'est pas la position de départ
-    //float taillePasY = abs(taillePas * cos(PI * axe / 180.0)); //Serial.print("taillePasY: ");i(taillePasY)
-    //float taillePasX = abs(taillePas * sin(PI * axe / 180.0)); //Serial.print("taillePasX: ");i(taillePasX )  
+    float taillePasY = abs(taillePas * cos(PI * axe / 180.0)); //Serial.print("taillePasY: ");i(taillePasY)
+    float taillePasX = abs(taillePas * sin(PI * axe / 180.0)); //Serial.print("taillePasX: ");i(taillePasX )  
     for(unsigned short i = 0; i <= 100; i++){
-      //TODO: à optimiser ! A revoir, ne fonctionne pas correctement
+      //TODO: A optimiser ! A revoir, ne fonctionne pas correctement !
       if(axe == 0.00f){
-        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y+0.01f){tournerDroite(45.0);}  //(0,1)
+        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);}  //(0,1)
       }
       if(axe > 0.00f && axe < 90.00f){
-        if(obstacles[i][0] == position.x+0.01f && obstacles[i][1] == position.y+0.01f){tournerDroite(45.0);}  //(1,1)
+        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);}  //(1,1)
       }     
       if(axe == 90.00f){
-        if(obstacles[i][0] == position.x+0.01f && obstacles[i][1] == position.y){tournerDroite(45.0);}  //(1,0)
+        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y){tournerDroite(45.0);}  //(1,0)
       }
       if(axe > 90.00f && axe < 180.00f){
-        if(obstacles[i][0] == position.x+0.01f && obstacles[i][1] == position.y-0.01f){tournerDroite(45.0);} //(1,-1)
+        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(1,-1)
       }
       if(axe == 180.00f){
-        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y-0.01f){tournerDroite(45.0);} //(0,-1) 
+        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(0,-1) 
       }
       if(axe > 180.00f && axe < 270.00f){
-        if(obstacles[i][0] == position.x-0.01f && obstacles[i][1] == position.y-0.01f){tournerDroite(45.0);} //(-1,-1) 
+        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(-1,-1) 
       }
       if(axe == 270.00f){
-        if(obstacles[i][0] == position.x-0.01f && obstacles[i][1] == position.y){tournerDroite(45.0);} //(-1,0) 
+        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y){tournerDroite(45.0);} //(-1,0) 
       }
       if(axe > 270.00f && axe < 360.00f){
-        if(obstacles[i][0] == position.x-0.01f && obstacles[i][1] == position.y+0.01f){tournerDroite(45.0);} //(-1,1) 
+        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);} //(-1,1) 
       } 
     }
   }
