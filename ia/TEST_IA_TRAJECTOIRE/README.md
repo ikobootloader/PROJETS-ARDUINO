@@ -1,5 +1,7 @@
 ###### Algorithme de propagation de la récompense
 
+T = territoire
+
 $Ve =$ Valeur d'état
 
 $(R(x),R(y)) =$ Coordonnées de la récompense
@@ -10,7 +12,7 @@ $γ = 0.90$
 
 $∀\ Ve ≠ ℤ, Ve = γVe'$
 
-$∃\ Ve$ { 
+$∀ état ∈ T$, $Ve ≠ 1$, $∃\ Ve$ tel que{ 
 
 //Surface gauche haut 
 
