@@ -8,9 +8,9 @@ struct Coordonnees {
   float x;  // 
   float y;  // 
 };
-float axe = 0; // AXE DE ROTATION 0° à 360°
-const float taillePas = 0.01;     // Taille du pas
-Coordonnees position = { 0.0, 0.0 };  // Initialiser les coordonnées à l'origine
+float axe = 0.0; // AXE DE ROTATION 0° à 360°
+const float taillePas = 0.01; // Taille du pas
+Coordonnees position = { 0.0, 0.0 }; // Initialiser les coordonnées à l'origine
 /***************************************************/
 
 void avancer(float orientation) {
@@ -19,8 +19,8 @@ void avancer(float orientation) {
   // Conversion de degrés à radians
   float angle_radian = PI * orientation / 180.0;
   // Calcul des coordonnées x et y
-  float tailleY = taillePas * cos(angle_radian);
-  float tailleX = taillePas * sin(angle_radian);
+  float tailleY = taillePas * cos(angle_radian); //tailleY = taillePas * cos(PI * angle / 180.0)
+  float tailleX = taillePas * sin(angle_radian); //tailleX = taillePas * sin(PI * angle / 180.0)
   // Nouvelles positions
   position.x = position.x + tailleX;
   position.y = position.y + tailleY;
@@ -102,7 +102,7 @@ void allerA(float destinationX, float destinationY) {
   /***/
 
   static bool rot = 0;
-  static float stableHypotenuse = 0;
+  static float stableHypotenuse = 0.0;
 
   if(rot == 0){
 
@@ -112,7 +112,7 @@ void allerA(float destinationX, float destinationY) {
 
     //Tangente
     float angleDestination = 0;
-    angleDestination = atan(vecteurX/vecteurY) * 180 / PI;
+    angleDestination = atan(vecteurX/vecteurY) * 180.0 / PI;
     //Trajectoire = hypoténuse
     float hypotenuse = sqrt(pow(vecteurX,2.0)+pow(vecteurY,2.0));
     
@@ -127,8 +127,8 @@ void allerA(float destinationX, float destinationY) {
     //Triangulation
     //TODO: à optimiser !
     if(destinationY > position.y && destinationX > position.x) angleDestination = angleDestination; //(y,x)
-    if(destinationY < position.y && destinationX > position.x) angleDestination = 180 - angleDestination; //(-y,x)
-    if(destinationY < position.y && destinationX < position.x) angleDestination = 180 + angleDestination; //(-y,-x)
+    if(destinationY < position.y && destinationX > position.x) angleDestination = 180.0 - angleDestination; //(-y,x)
+    if(destinationY < position.y && destinationX < position.x) angleDestination = 180.0 + angleDestination; //(-y,-x)
     if(destinationY > position.y && destinationX < position.x) angleDestination = angleDestination*-1; //(y,-x)
 
     //pas de triangulation 
@@ -165,7 +165,7 @@ void allerA(float destinationX, float destinationY) {
     //Serial.print("avancement = ");i(avancement)
     avancer(axe);
     delay(500);
-    avancement += 0.01;
+    avancement += 0.01;//Prendre en compte les angles qui ne sont pas droits !
   }else{
     //i("ok")
     ARRET;

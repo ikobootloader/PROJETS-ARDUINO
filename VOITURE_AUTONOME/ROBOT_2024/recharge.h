@@ -38,7 +38,7 @@ void pointRecharge(){ //2
     if(positionRecharge[0] != position.x && stopallerA == 0 || positionRecharge[1] != position.y && stopallerA == 0){
         allerA(positionRecharge[0],positionRecharge[1]);
     } 
-    if(positionRecharge[0] >= position.x-0.01 && positionRecharge[0] <= position.x+0.01 && positionRecharge[1] >= position.y-0.01 && positionRecharge[1] <= position.y+0.01){
+    if(positionRecharge[0] >= position.x-0.01f && positionRecharge[0] <= position.x+0.01f && positionRecharge[1] >= position.y-0.01f && positionRecharge[1] <= position.y+0.01f){
       ARRET;
       stopallerA = 1;
     } 
