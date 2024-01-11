@@ -12,7 +12,7 @@ $γ = 0.90$
 
 $∀\ Ve ≠ ℤ, Ve = γVe'$
 
-$∀ état ∈ T$, $Ve ≠ 1$, $∃\ Ve$ tel que{ 
+$∀\ état ∈ T$, $Ve ≠ 1$, $∃\ un ensemble de Ve tel que${ 
 
 //Surface gauche haut 
 
