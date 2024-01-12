@@ -21,7 +21,7 @@
  <li>Problème d'interprétation du type float.</li>
  <li>Manque de précision du fait de la valeur étalon (voir trajectoire.h). L'utilisation d'une boussole serait un plus.</li>
  <li>Limite d'enregistrements des obstacles en mémoire.</li>
- <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire ne fonctionne pas correctement au moins orsque la direction est à 0°.</li>
+ <li>L'algorithme d'évitement d'obstacles enregistrés en mémoire ne fonctionne pas correctement au moins lorsque la direction est à 0°.</li>
 </ul>
 
 <h3>Composants utilisés</h3>
