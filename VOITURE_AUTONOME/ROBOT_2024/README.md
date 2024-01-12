@@ -243,7 +243,7 @@
    <img width=296
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/T%C3%A9l%C3%A9m%C3%A8tre%20TOF050C/Branchements%20t%C3%A9l%C3%A9m%C3%A8tre%20laser.PNG?raw=true"
   v:shapes="Image_x0020_9"></span></p>
-  <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 50cm sur 25°. Toutefois, la bibilothèque Adafruit bride la réception du capteur à 255mm. A voir s'il existe une bibliothèque qui exploite davantage les caractéristiques du capteur.<br/>Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
+  <p style="text-align:center;">Fonctionne très bien avec la bibliothèque <a href="https://github.com/adafruit/Adafruit_VL6180X" targer="_blank">Adafruit VL6180X</a>. <br/>Mesure jusqu'à une distance de 50cm sur 25°. Toutefois, la bibilothèque Adafruit bride la sensibilité du capteur à 255mm. A voir s'il existe une bibliothèque qui exploite davantage les caractéristiques du capteur.<br/>Avec l'utilisation du webserveur, et sans servomoteur pour permettre d'augmenter le champ de vision, l'agent fonce dans le mur très souvent!</p><br/>
   </td>
  </tr>
  <tr style='mso-yfti-irow:16'>
