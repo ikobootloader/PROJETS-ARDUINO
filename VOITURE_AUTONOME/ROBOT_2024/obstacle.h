@@ -13,31 +13,31 @@ void eviterObstacles(){
   if(position.x != 0.00f && position.y != 0.00f && attente == 0){ //Si ce n'est pas la position de départ
     float taillePasY = abs(taillePas * cos(PI * axe / 180.0)); //Serial.print("taillePasY: ");i(taillePasY)
     float taillePasX = abs(taillePas * sin(PI * axe / 180.0)); //Serial.print("taillePasX: ");i(taillePasX )  
+    float margeErreur = 0.005; //0.01 par défaut. Augmenter la valeur, augmente la précision
     for(unsigned short i = 0; i <= 100; i++){
-      //TODO: A optimiser ! A revoir, ne fonctionne pas correctement !
       if(axe == 0.00f){
-        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);}  //(0,1)
+        if(abs(obstacles[i][0] - position.x) < margeErreur && abs(obstacles[i][1] - (position.y + taillePasY)) < margeErreur){tournerDroite(45.0);break;}  //(0,1)
       }
       if(axe > 0.00f && axe < 90.00f){
-        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);}  //(1,1)
-      }     
+        if(abs(obstacles[i][0] - (position.x + taillePasX)) < margeErreur && abs(obstacles[i][1] - (position.y + taillePasY)) < margeErreur){tournerDroite(45.0);break;}  //(1,1)
+      }  
       if(axe == 90.00f){
-        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y){tournerDroite(45.0);}  //(1,0)
+        if(abs(obstacles[i][0] - (position.x + taillePasX)) < margeErreur && abs(obstacles[i][1] - position.y) < margeErreur){tournerDroite(45.0);break;}  //(1,0)
       }
       if(axe > 90.00f && axe < 180.00f){
-        if(obstacles[i][0] == position.x+taillePasX && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(1,-1)
+        if(abs(obstacles[i][0] - (position.x + taillePasX)) < margeErreur && abs(obstacles[i][1] - (position.y - taillePasY)) < margeErreur){tournerDroite(45.0);break;} //(1,-1)
       }
       if(axe == 180.00f){
-        if(obstacles[i][0] == position.x && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(0,-1) 
+        if(abs(obstacles[i][0] - position.x) < margeErreur && abs(obstacles[i][1] - (position.y - taillePasY)) < margeErreur){tournerDroite(45.0);break;} //(0,-1) 
       }
       if(axe > 180.00f && axe < 270.00f){
-        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y-taillePasY){tournerDroite(45.0);} //(-1,-1) 
+        if(abs(obstacles[i][0] - (position.x - taillePasX)) < margeErreur && abs(obstacles[i][1] - (position.y - taillePasY)) < margeErreur){tournerDroite(45.0);break;} //(-1,-1) 
       }
       if(axe == 270.00f){
-        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y){tournerDroite(45.0);} //(-1,0) 
+        if(abs(obstacles[i][0] - (position.x - taillePasX)) < margeErreur && abs(obstacles[i][1] - position.y) < margeErreur){tournerDroite(45.0);break;} //(-1,0) 
       }
       if(axe > 270.00f && axe < 360.00f){
-        if(obstacles[i][0] == position.x-taillePasX && obstacles[i][1] == position.y+taillePasY){tournerDroite(45.0);} //(-1,1) 
+        if(abs(obstacles[i][0] - (position.x - taillePasX)) < margeErreur && abs(obstacles[i][1] - (position.y + taillePasY)) < margeErreur){tournerDroite(45.0);break;} //(-1,1) 
       } 
     }
   }

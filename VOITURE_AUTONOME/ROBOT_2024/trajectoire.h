@@ -8,9 +8,9 @@ struct Coordonnees {
   float x;  // 
   float y;  // 
 };
-float axe = 0.0; // AXE DE ROTATION 0° à 360°
+float axe = 0.00; // AXE DE ROTATION 0° à 360°
 const float taillePas = 0.01; // Taille du pas
-Coordonnees position = { 0.0, 0.0 }; // Initialiser les coordonnées à l'origine
+Coordonnees position = {0.00,0.00}; // Initialiser les coordonnées à l'origine
 /***************************************************/
 
 void avancer(float orientation) {
