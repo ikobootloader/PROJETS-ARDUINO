@@ -500,6 +500,11 @@
 </table>
 <br>
 <h3>Circuiterie</h3>
+<h2>Attention</h2>
+<p><ul>
+ <li>Le câblage ci-dessous peut contenir des erreurs!</li> 
+  <li>La pile affichée est une pile rechargeable!</li>
+</ul></p>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/ROBOT_2024_bb.jpg?raw=true"/></p>
 <br>
 <br>
