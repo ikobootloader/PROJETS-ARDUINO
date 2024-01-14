@@ -500,7 +500,7 @@
 </table>
 <br>
 <h3>Circuiterie</h3>
-<h4 style="text-color:red;">Attention</h4>
+<h4 style="color:red !important;">Attention</h4>
 <p><ul>
  <li>Le câblage ci-dessous peut contenir des erreurs!</li> 
   <li>La pile affichée est une pile rechargeable!</li>
