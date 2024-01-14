@@ -504,6 +504,7 @@
 <p><ul>
  <li>Le câblage ci-dessous peut contenir des erreurs!</li> 
   <li>La pile affichée est une pile rechargeable!</li>
+ <li>Les broches EN1 et EN2 du module L293D n'apparaissent pas.</li>
 </ul></p>
 <p><img src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/ROBOT_2024_bb.jpg?raw=true"/></p>
 <br>
