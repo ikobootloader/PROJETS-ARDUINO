@@ -4,17 +4,19 @@
 ////////////////////////////////////////////////////
 //              GESTION DES OBSTACLES             //
 ////////////////////////////////////////////////////
-bool attente = 0; //Interrupteur process d'évitement
+bool attente = 1; //Interrupteur process d'évitement
 float obstacles[100][2]; //Garder en mémoire les obstacles et les chocs pour les éviter
+//Du coup, les positions x et y à 0 = obstacle --'
+//Possibilité de créer un tableau par tranches d'angles pour limiter la quantité de données à traiter dans la boucle for
 /***************************************************/
 
 //Anticiper les positions 'obstacles' et les contourner 
 void eviterObstacles(){
-  if(position.x != 0.00f && position.y != 0.00f && attente == 0){ //Si ce n'est pas la position de départ
+  if(attente == 0){
     float taillePasY = abs(taillePas * cos(PI * axe / 180.0)); //Serial.print("taillePasY: ");i(taillePasY)
     float taillePasX = abs(taillePas * sin(PI * axe / 180.0)); //Serial.print("taillePasX: ");i(taillePasX )  
-    float margeErreur = 0.005; //0.001 par défaut
-    for(unsigned short i = 0; i <= 100; i++){
+    float margeErreur = 0.001; //0.001 par défaut. 
+    for(char i = 0; i <= 100; i++){
       if(axe == 0.00f){
         if(abs(obstacles[i][0] - position.x) < margeErreur && abs(obstacles[i][1] - (position.y + taillePasY)) < margeErreur){tournerDroite(45.0);break;}  //(0,1)
       }
@@ -60,7 +62,7 @@ void memoObstacles(){
       Serial.print("Obstacle positions: x=");Serial.print(obstacles[q][0],5);
       Serial.print(" y=");Serial.println(obstacles[q][1],5);
   }
-**/
+  **/
 }
 
 //REACTIONS AUX OBSTACLES ET CHOCS
