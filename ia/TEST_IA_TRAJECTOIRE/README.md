@@ -40,3 +40,5 @@ $Pour\ y ≤ argmax(y) - R(y)\ et\ pour\ x ≤ argmax(x) - R(x)$
 $( R(y) + y , R(x) + x  ) = γ^{x+y}$
 
 }
+
+Frédérick MURAT - 2023
