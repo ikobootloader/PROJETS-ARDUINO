@@ -1,5 +1,5 @@
-<h4>Algorithme de propagation de la récompense pour un agent à actions discrètes (gauche, droite, haut,bas) dans le cadre d'un apprentissage par renforcement sans état terminal</h4>
-<h6>L'accès à la récompense est extrapolé sur tout le territoire.</h6>
+<h4>Algorithme de propagation de la récompense dans un espace de coordonnées cartésiennes pour un agent à actions discrètes (gauche, droite, haut,bas) dans le cadre d'un apprentissage par renforcement sans état terminal</h4>
+<h6>Avec cet algorithme, l'accès à la récompense est extrapolé sur tout le territoire.</h6>
 
 T = territoire
 
