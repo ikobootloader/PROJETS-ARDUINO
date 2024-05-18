@@ -1,4 +1,4 @@
-###### Algorithme de propagation de la récompense pour un agent à actions discrètes (gauche, droite, haut,bas) dans le cadre d'un apprentissage par renforcement sans état terminal.
+<h1>###### Algorithme de propagation de la récompense pour un agent à actions discrètes (gauche, droite, haut,bas) dans le cadre d'un apprentissage par renforcement sans état terminal</h1>
 L'accès à la récompense est extrapolé sur tout le territoire.
 
 T = territoire
