@@ -19,25 +19,25 @@ $∀\ état ∈ T$, $Ve ≠ 1$, $∃\ un\ ensemble\ de\ Ve\ tel\ que${
 
 $Pour\ y ≤ R(y)\ et\ pour\ x ≤ R(x)$
 
-&nbsp;$( R(y) - y , R(x) - x  ) = γ^{x+y}$
+&nbsp;&nbsp;$( R(y) - y , R(x) - x  ) = γ^{x+y}$
 
 //Surface droite haut 
 
 $Pour\ y ≤ R(y)\ et\ pour\ x ≤ argmax(x)-R(x)$
 
-&nbsp;$( R(y) - y , R(x) + x  ) = γ^{x+y}$
+&nbsp;&nbsp;$( R(y) - y , R(x) + x  ) = γ^{x+y}$
 
 //Surface gauche bas
 
 $Pour\ y ≤ argmax(y) - R(y)\ et\ pour\ x ≤ R(x)$
 
-&nbsp;$( R(y) + y , R(x) - x  ) = γ^{x+y}$
+&nbsp;&nbsp;$( R(y) + y , R(x) - x  ) = γ^{x+y}$
 
 //Surface droite bas
 
 $Pour\ y ≤ argmax(y) - R(y)\ et\ pour\ x ≤ argmax(x) - R(x)$
 
-&nbsp;$( R(y) + y , R(x) + x  ) = γ^{x+y}$
+&nbsp;&nbsp;$( R(y) + y , R(x) + x  ) = γ^{x+y}$
 
 }
 
