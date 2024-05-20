@@ -2,7 +2,7 @@
 
 <p><b>AVERTISSEMENTS : JE NE DONNE AUCUNE GARANTIE DE FONCTIONNEMENT ET DE SECURITE SUR L'UTILISATION DES PARTIES MATERIELLES ET LOGICIELLES DE MES PROJETS. LA PRATIQUE DE L'ELECTRONIQUE EST DANGEREUSE, SOYEZ PRUDENT!</b></p>
 
-<h2>Agent autonome</h2>
+<h2>Agent autonome à actions continues sans état terminal</h2>
 <p>
  <ul>
   	<li>Déplacement libre</li>
