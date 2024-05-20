@@ -1,4 +1,4 @@
-<h4>Algorithme de propagation de la récompense à partir d'un facteur d'escompte ($γ$) dans un espace de coordonnées cartésiennes pour un agent à actions discrètes (gauche, droite, haut, bas) dans le cadre d'un apprentissage par renforcement sans état terminal</h4>
+<h4>Algorithme de propagation de la récompense à partir d'un facteur d'escompte ($γ$) dans un espace de coordonnées cartésiennes pour un agent à actions discrètes (déplacement gauche, droite, haut, bas) dans le cadre d'un apprentissage par renforcement sans état terminal</h4>
 <h6>Avec cet algorithme, l'accès à la récompense est extrapolé sur tout le territoire.</h6>
 
 T = territoire
