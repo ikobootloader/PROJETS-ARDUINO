@@ -168,7 +168,7 @@
   src="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/ROBOT_2024/assets/Mini%20L293D%20motor%20drive%20module/Branchements%20LM293D.PNG?raw=true"
   v:shapes="Image_x0020_5"><![endif]></span></p>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><o:p>Utiliser la bibliothèque <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/libraries/L298N/Voiture" heref="_blank">Voiture</a>.<br/>Si l'un des moteurs ou les 2 ne tournent pas dans le bon sens, il faut intervertir les connexions A-|A+ et/ou B-|B+ sur le module Module L293D.</o:p></p><br/>
+  line-height:normal'><o:p>Utiliser la bibliothèque <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/tree/main/libraries/L298N/Voiture" heref="_blank">Voiture</a>.<br/>Si l'un des moteurs ou les 2 ne tournent pas dans le bon sens, il faut intervertir les connexions A-|A+ et/ou B-|B+ sur le module L293D.</o:p></p><br/>
   </td>
  </tr>
  <tr style='mso-yfti-irow:8'>
