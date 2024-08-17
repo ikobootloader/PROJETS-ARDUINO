@@ -1,3 +1,5 @@
+## Approche heuristique
+
 Algorithme de propagation de la récompense dans un espace de coordonnées cartésiennes pour un agent effectuant des actions discrètes (déplacement gauche, droite, haut, bas). Cet algorithme est utilisé dans le cadre d'un apprentissage par renforcement, où il n'y a pas d'état terminal.
 
 ### Explication de l'algorithme
