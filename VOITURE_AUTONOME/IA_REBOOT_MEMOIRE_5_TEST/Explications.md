@@ -33,13 +33,13 @@ Variables et Notations
 
 
 
-f(c) = \sum_{i=1}^{m} \delta(h_i, c)
+$f(c) = \sum_{i=1}^{m} \delta(h_i, c)$
 
 Algorithme de Détection du Choix Fréquent
 
 L'algorithme identifie le choix le plus fréquent dans  :
 
-c_{\text{freq}} = \arg\max_{c \in C} f(c)
+$c_{\text{freq}} = \arg\max_{c \in C} f(c)$
 
 Sélection Temporairement Limitée des Choix
 
