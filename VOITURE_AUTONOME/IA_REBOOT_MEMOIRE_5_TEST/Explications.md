@@ -3,17 +3,16 @@ Voici un résumé des éléments et du fonctionnement (voir le modèle grifonné
 1. Table des choix disponibles : Cette table contient plusieurs options, numérotées de 1 à 4 dans l'exemple (choix 1, choix 2, etc.). Ces choix sont liés à des interactions avec l'environnement et peuvent varier en fonction des réponses de l'environnement.
 
 
-2. Environnement et Interaction : Les choix disponibles semblent influencer ou être influencés par l'environnement, par exemple dans le cas d'interactions avec des capteurs ou des actions.
+2. Environnement et Interaction : Les choix disponibles sont influencés par l'environnement, par exemple dans le cas d'interactions avec des capteurs ou des actions.
 
 
 3. Algorithme de détection du choix le plus fréquent : Ce bloc observe les choix précédents pour détecter celui qui a été le plus souvent sélectionné, puis l'enregistre comme choix probable pour les décisions futures.
 
 
-4. Table des choix effectués : Une table linéaire répertorie les choix déjà effectués dans un ordre chronologique, du plus ancien au plus récent. Un mécanisme semble limiter la sélection d'un sous-ensemble de ces choix pour une prise de décision immédiate.
+4. Table des choix effectués : Une table linéaire répertorie les choix déjà effectués dans un ordre chronologique, du plus ancien au plus récent. Un mécanisme limite la sélection d'un sous-ensemble de ces choix pour une prise de décision immédiate.
 
 
 5. Réindexation et réinitialisation : En cas de choix incorrect, le modèle réindexe les choix en fonction de nouvelles interactions avec l'environnement. Si un choix est validé, il est enregistré en mémoire.
-
 
 
 Ce modèle suggère un apprentissage par renforcement, où les choix sont ajustés en fonction des interactions avec l'environnement et des choix passés.
