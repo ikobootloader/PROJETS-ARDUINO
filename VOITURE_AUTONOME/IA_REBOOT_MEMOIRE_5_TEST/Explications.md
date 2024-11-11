@@ -66,6 +66,17 @@ Cette approche peut être itérative, permettant au modèle d'apprendre les choi
 
 Code généré par GPT4o
 
+Pour intégrer ce code dans un projet Arduino avec un capteur à ultrason pour détecter les obstacles, il est nécessaire de modifier le code pour utiliser les bibliothèques Arduino et ajouter la logique de détection d’obstacles. Voici une version adaptée pour Arduino.
+
+### Matériel requis
+- Un capteur à ultrason (par exemple, le HC-SR04) pour la détection d'obstacles.
+- Une carte Arduino (comme l'Arduino Uno).
+
+### Code C++ pour Arduino
+
+Ce code utilise le capteur à ultrason pour détecter des obstacles. Si un obstacle est détecté, l’agent sélectionne un choix d’évitement basé sur l’historique des choix passés.
+
+```cpp
 #include <Arduino.h>
 
 // Pins du capteur ultrason
@@ -177,4 +188,25 @@ void loop() {
 
     delay(100);  // Attente entre les mesures
 }
+```
+
+### Explications du Code
+
+1. **Mesure de la Distance** : La fonction `measureDistance()` utilise le capteur à ultrason pour mesurer la distance d'un obstacle en face de l'agent. Si la distance est inférieure à un seuil (`obstacleThreshold`), l'agent considère qu'il y a un obstacle.
+
+2. **Sélection du Choix** : Si un obstacle est détecté, la fonction `selectFrequentChoice()` choisit la manœuvre d'évitement la plus fréquente dans les dernières actions stockées dans l'historique. Si l'historique est vide, un choix est sélectionné au hasard.
+
+3. **Exécution du Choix** : La fonction `executeChoice()` définit les actions associées aux choix possibles (tourner à gauche, tourner à droite, reculer, avancer). Vous pouvez compléter cette fonction avec les commandes moteurs spécifiques pour votre projet.
+
+4. **Historique des Choix** : L'historique stocke les choix effectués et est limité en taille pour éviter une surcharge de mémoire.
+
+5. **Détection et Évitement d'Obstacles** : Dans la boucle `loop()`, si la distance est en dessous du seuil, l'agent choisit une manœuvre d'évitement et l'exécute. Sinon, il continue tout droit.
+
+### Remarques
+
+- **Délais** : Un délai est ajouté après chaque action pour laisser le temps à l'agent de l'exécuter.
+- **Aléatoire** : L'utilisation de `random()` permet de sélectionner une action aléatoire au début si l'historique est vide.
+- **Adaptation** : Le code peut être modifié pour inclure des commandes moteurs spécifiques, en fonction de la configuration de votre robot.
+
+Ce modèle devrait fournir une base fonctionnelle pour un robot qui détecte des obstacles et adapte son comportement en fonction des actions passées, en apprenant progressivement les manœuvres les plus efficaces.
 
