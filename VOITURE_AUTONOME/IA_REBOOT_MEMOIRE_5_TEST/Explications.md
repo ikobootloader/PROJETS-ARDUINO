@@ -19,16 +19,12 @@ Ce modèle suggère un apprentissage par renforcement, où les choix sont ajust�
 
 ***
 
-Bien sûr ! Voici une formalisation mathématique de votre modèle d'intelligence artificielle :
-
 ### Variables et Notations
 
 1. **Ensemble des Choix Disponibles** : Soit $C = \{c_1, c_2, \dots, c_n\}$ l'ensemble des choix disponibles.
 2. **Table des Choix Effectués** : Soit $H = [h_1, h_2, \dots, h_m]$ une liste ordonnée des choix effectués dans le passé, avec $h_i \in C$.
 3. **Fréquence d'un Choix** : La fréquence d'apparition d'un choix $c \in C$ dans $H$ est notée $f(c)$, définie par :
-   $$
-   f(c) = \sum_{i=1}^{m} \delta(h_i, c)
-$$
+   $$f(c) = \sum_{i=1}^{m} \delta(h_i, c)$$
    où $\delta(h_i, c) = 1$ si $h_i = c$ et $0$ sinon.
 
 ### Algorithme de Détection du Choix Fréquent
