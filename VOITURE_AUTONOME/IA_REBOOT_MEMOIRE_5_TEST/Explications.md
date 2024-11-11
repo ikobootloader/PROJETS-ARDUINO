@@ -24,15 +24,13 @@ Ce modèle suggère un apprentissage par renforcement, où les choix sont ajust�
 1. **Ensemble des Choix Disponibles** : Soit $C = \{c_1, c_2, \dots, c_n\}$ l'ensemble des choix disponibles.
 2. **Table des Choix Effectués** : Soit $H = [h_1, h_2, \dots, h_m]$ une liste ordonnée des choix effectués dans le passé, avec $h_i \in C$.
 3. **Fréquence d'un Choix** : La fréquence d'apparition d'un choix $c \in C$ dans $H$ est notée $f(c)$, définie par :
-   $$f(c) = \sum_{i=1}^{m} \delta(h_i, c)$$
+   $f(c) = \sum_{i=1}^{m} \delta(h_i, c)$
    où $\delta(h_i, c) = 1$ si $h_i = c$ et $0$ sinon.
 
 ### Algorithme de Détection du Choix Fréquent
 
 L'algorithme identifie le choix le plus fréquent dans $H$ :
-$$
-c_{\text{freq}} = \arg\max_{c \in C} f(c)
-$$
+$c_{\text{freq}} = \arg\max_{c \in C} f(c)$
 Ce choix $c_{\text{freq}}$ est celui qui a été sélectionné le plus souvent dans l'historique et qui est donc préféré pour les futures décisions.
 
 ### Sélection Temporairement Limitée des Choix
@@ -40,13 +38,9 @@ Ce choix $c_{\text{freq}}$ est celui qui a été sélectionné le plus souvent d
 L'algorithme ne sélectionne pas automatiquement le choix $c_{\text{freq}}$ à chaque étape, mais il utilise une "fenêtre" de sélection limitée, que nous pouvons appeler $L \subset H$. Par exemple, $L$ peut contenir les $k$ derniers choix de $H$ (donc $L = [h_{m-k+1}, \dots, h_m]$).
 
 La fréquence dans cette sous-séquence $L$ est notée $f_L(c)$, définie par :
-$$
-f_L(c) = \sum_{i=m-k+1}^{m} \delta(h_i, c)
-$$
+$f_L(c) = \sum_{i=m-k+1}^{m} \delta(h_i, c)$
 Le choix préféré dans cette fenêtre est donc :
-$$
-c_{\text{freq}, L} = \arg\max_{c \in C} f_L(c)
-$$
+$c_{\text{freq}, L} = \arg\max_{c \in C} f_L(c)$
 
 ### Interaction avec l'Environnement
 
