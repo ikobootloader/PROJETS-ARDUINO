@@ -19,64 +19,56 @@ Ce modèle suggère un apprentissage par renforcement, où les choix sont ajust�
 
 ***
 
-Voici une formalisation mathématique du modèle :
+Bien sûr ! Voici une formalisation mathématique de votre modèle d'intelligence artificielle :
 
-Variables et Notations
+### Variables et Notations
 
-1. Ensemble des Choix Disponibles : Soit  l'ensemble des choix disponibles.
+1. **Ensemble des Choix Disponibles** : Soit $C = \{c_1, c_2, \dots, c_n\}$ l'ensemble des choix disponibles.
+2. **Table des Choix Effectués** : Soit $H = [h_1, h_2, \dots, h_m]$ une liste ordonnée des choix effectués dans le passé, avec $h_i \in C$.
+3. **Fréquence d'un Choix** : La fréquence d'apparition d'un choix $c \in C$ dans $H$ est notée $f(c)$, définie par :
+   $$
+   f(c) = \sum_{i=1}^{m} \delta(h_i, c)
+$$
+   où $\delta(h_i, c) = 1$ si $h_i = c$ et $0$ sinon.
 
+### Algorithme de Détection du Choix Fréquent
 
-2. Table des Choix Effectués : Soit  une liste ordonnée des choix effectués dans le passé, avec .
+L'algorithme identifie le choix le plus fréquent dans $H$ :
+$$
+c_{\text{freq}} = \arg\max_{c \in C} f(c)
+$$
+Ce choix $c_{\text{freq}}$ est celui qui a été sélectionné le plus souvent dans l'historique et qui est donc préféré pour les futures décisions.
 
+### Sélection Temporairement Limitée des Choix
 
-3. Fréquence d'un Choix : La fréquence d'apparition d'un choix  dans  est notée , définie par :
+L'algorithme ne sélectionne pas automatiquement le choix $c_{\text{freq}}$ à chaque étape, mais il utilise une "fenêtre" de sélection limitée, que nous pouvons appeler $L \subset H$. Par exemple, $L$ peut contenir les $k$ derniers choix de $H$ (donc $L = [h_{m-k+1}, \dots, h_m]$).
 
-
-
-$f(c) = \sum_{i=1}^{m} \delta(h_i, c)$
-
-Algorithme de Détection du Choix Fréquent
-
-L'algorithme identifie le choix le plus fréquent dans  :
-
-$c_{\text{freq}} = \arg\max_{c \in C} f(c)$
-
-Sélection Temporairement Limitée des Choix
-
-L'algorithme ne sélectionne pas automatiquement le choix  à chaque étape, mais il utilise une "fenêtre" de sélection limitée, que nous pouvons appeler . Par exemple,  peut contenir les  derniers choix de  (donc ).
-
-La fréquence dans cette sous-séquence  est notée , définie par :
-
+La fréquence dans cette sous-séquence $L$ est notée $f_L(c)$, définie par :
+$$
 f_L(c) = \sum_{i=m-k+1}^{m} \delta(h_i, c)
-
+$$
+Le choix préféré dans cette fenêtre est donc :
+$$
 c_{\text{freq}, L} = \arg\max_{c \in C} f_L(c)
+$$
 
-Interaction avec l'Environnement
+### Interaction avec l'Environnement
 
-À chaque itération, le système sélectionne un choix  et observe la réponse de l'environnement. Si le choix est bon (ou correct selon un critère externe), il est ajouté à . Sinon, le choix est rejeté, et le système tente un choix alternatif dans , ou bien réévalue les choix selon les nouvelles conditions de l'environnement.
+À chaque itération, le système sélectionne un choix $c_t$ et observe la réponse de l'environnement. Si le choix est bon (ou correct selon un critère externe), il est ajouté à $H$. Sinon, le choix est rejeté, et le système tente un choix alternatif dans $C$, ou bien réévalue les choix selon les nouvelles conditions de l'environnement.
 
-Mécanisme de Réindexation
+### Mécanisme de Réindexation
 
-En cas de mauvais choix (échec d'interaction avec l'environnement), le choix est retiré de  et une mise à jour de la fréquence est effectuée. Dans ce cas, un mécanisme de réinitialisation peut être activé, permettant de redéfinir l'indexation des choix, favorisant les choix les plus réussis dans le passé.
+En cas de mauvais choix (échec d'interaction avec l'environnement), le choix est retiré de $L$ et une mise à jour de la fréquence est effectuée. Dans ce cas, un mécanisme de réinitialisation peut être activé, permettant de redéfinir l'indexation des choix, favorisant les choix les plus réussis dans le passé.
 
-Formalisation Complète de la Séquence de Choix
+### Formalisation Complète de la Séquence de Choix
 
 Le modèle suit la séquence :
 
-1. Calcul du Choix Préféré : Trouver  dans la fenêtre .
-
-
-2. Interaction avec l'Environnement : Effectuer  et observer le retour de l'environnement.
-
-
-3. Mise à jour de l'Historique :
-
-Si le retour est positif, ajouter  dans .
-
-Si le retour est négatif, exclure  de  et réévaluer le choix préféré.
-
-
-
+1. **Calcul du Choix Préféré** : Trouver $c_{\text{freq}, L}$ dans la fenêtre $L$.
+2. **Interaction avec l'Environnement** : Effectuer $c_{\text{freq}, L}$ et observer le retour de l'environnement.
+3. **Mise à jour de l'Historique** :
+   - Si le retour est positif, ajouter $c_{\text{freq}, L}$ dans $H$.
+   - Si le retour est négatif, exclure $c_{\text{freq}, L}$ de $L$ et réévaluer le choix préféré.
 
 Cette approche peut être itérative, permettant au modèle d'apprendre les choix optimaux au fil du temps.
 
