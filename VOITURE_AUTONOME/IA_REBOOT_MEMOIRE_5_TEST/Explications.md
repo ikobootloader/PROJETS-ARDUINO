@@ -1,4 +1,4 @@
-Voici un résumé des éléments et du fonctionnement (voir le modèle grifonné au format image) :
+Voici un résumé des éléments et du fonctionnement (voir le modèle grifonné au format <a href="https://github.com/ikobootloader/PROJETS-ARDUINO/blob/main/VOITURE_AUTONOME/IA_REBOOT_MEMOIRE_5_TEST/mod%C3%A8leIA.jpg" target="_blank">image</a>) :
 
 1. Table des choix disponibles : Cette table contient plusieurs options, numérotées de 1 à 4 dans l'exemple (choix 1, choix 2, etc.). Ces choix sont liés à des interactions avec l'environnement et peuvent varier en fonction des réponses de l'environnement.
 
