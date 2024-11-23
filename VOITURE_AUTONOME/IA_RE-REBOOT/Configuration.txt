@@ -1,0 +1,40 @@
+Ce fichier Configuration.h apporte plusieurs avantages :
+
+Centralisation :
+
+
+Toutes les constantes sont regroupées au même endroit
+Facilite les modifications et ajustements
+Évite la duplication de valeurs
+
+
+Organisation :
+
+
+Groupement logique des paramètres par namespace
+Séparation claire des différentes parties du système
+Documentation intégrée des valeurs
+
+
+Maintenance :
+
+
+Modification facile des paramètres
+Vue d'ensemble des configurations
+Standardisation des valeurs
+
+
+Flexibilité :
+
+
+Paramètres facilement modifiables
+Configuration adaptable selon les besoins
+Support du débogage
+
+
+Sécurité :
+
+
+Valeurs constantes (constexpr)
+Typage fort avec les namespaces
+Prévention des modifications accidentelles

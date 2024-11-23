@@ -1,0 +1,27 @@
+Voici les principales améliorations proposées :
+
+1. **Architecture Modulaire** :
+- Séparation claire des responsabilités en différentes classes
+- Interface unifiée via RobotCore qui orchestre les composants
+- Meilleure encapsulation des données et comportements
+
+2. **Machine à États** :
+- États du robot clairement définis : EXPLORING, AVOIDING_OBSTACLE, CHARGING, FOLLOWING_PATTERN
+- Transitions d'état plus propres et explicites
+- Séparation des comportements par état
+
+3. **Gestion de la Stratégie** :
+- Matrice de score simplifiée et mieux encapsulée
+- Calcul des stratégies d'évitement plus clair
+- Meilleure séparation entre la décision et l'exécution
+
+4. **Gestion de la Mémoire** :
+- Interface plus claire pour l'enregistrement des mouvements
+- Meilleure abstraction des patterns de mouvement
+- Simplification de la détection des motifs
+
+5. **Améliorations Générales** :
+- Utilisation de const et constexpr pour les valeurs fixes
+- Meilleure gestion des types (uint8_t vs int)
+- Élimination des variables globales
+- Utilisation d'énumérations fortement typées

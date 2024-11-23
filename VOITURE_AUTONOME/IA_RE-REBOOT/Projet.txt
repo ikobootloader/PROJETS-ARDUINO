@@ -1,0 +1,10 @@
+projet/
+├── AutoRobot.ino         // Fichier principal
+├── Configuration.h       // (optionnel) Configuration globale
+├── RobotCore.h          // Coordinateur principal
+├── Movement.h           // Gestion des mouvements
+├── Sensors.h            // Gestion des capteurs
+├── Memory.h             // Gestion de la mémoire
+├── Strategy.h           // Gestion des stratégies
+├── PowerManagement.h    // Gestion de l'alimentation
+└── LED.h               // Gestion des LEDs
