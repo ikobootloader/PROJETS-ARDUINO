@@ -48,7 +48,7 @@ Le projet est organisé en modules distincts et réutilisables :
 
 1. Cloner le repository:
 ```bash
-git clone https://github.com/votre-username/robot-autonome.git
+git clone https://github.com/ikobootloader/robot-autonome.git
 ```
 
 2. Ouvrir `AutoRobot.ino` dans l'Arduino IDE
