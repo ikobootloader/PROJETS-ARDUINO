@@ -1,82 +1,121 @@
-## Approche heuristique
+# Apprentissage par renforcement sans état terminal — Archive de recherche
 
-Algorithme de propagation de la récompense dans un espace de coordonnées cartésiennes pour un agent effectuant des actions discrètes (déplacement gauche, droite, haut, bas). Cet algorithme est utilisé dans le cadre d'un apprentissage par renforcement, où il n'y a pas d'état terminal.
+> **Note** : Ce dépôt est une archive personnelle. Il documente une démarche de recherche amateur conduite indépendamment, puis optimisée avec l'assistance de l'IA. Le code et les concepts sont mis à disposition à titre de référence, sans garantie de complétude ni de robustesse.
 
-### Explication de l'algorithme
+---
 
-L'objectif de l'algorithme est de propager la valeur de la récompense (notée $\mathbb{Z}$) depuis un point de récompense donné $(R(x), R(y))$ sur tout le territoire $T$. Pour chaque état $(x, y)$ de ce territoire, la valeur d'état $V_e$ est mise à jour en fonction d'un facteur d'escompte $\gamma$ (ici $\gamma = 0.90$).
+## Contexte
 
-#### Règles de mise à jour
+Ce projet est né d'un problème concret : concevoir un agent robotique autonome capable de naviguer dans un espace inconnu, de localiser des points de recharge, et de gérer son énergie — le tout sur un microcontrôleur embarqué de type Arduino Uno aux ressources très contraintes.
 
-Pour chaque état $V_e$ dans $T$, tant que $V_e$ n'est pas égal à la récompense $\mathbb{Z}$, la mise à jour se fait selon les conditions suivantes :
+La contrainte matérielle a imposé de trouver des alternatives légères aux algorithmes classiques du reinforcement learning (Q-learning notamment), jugés trop gourmands en mémoire et en calcul pour ce contexte.
 
-1. **Si $y \leq R(y)$ et $x \leq R(x)$** :
-   $(R(y) - y, R(x) - x) = \gamma^{x+y}$
+---
 
-2. **Si $y \leq R(y)$ et $x \leq \text{argmax}(x) - R(x)$** :
-   $(R(y) - y, R(x) + x) = \gamma^{x+y}$
+## Principes fondamentaux
 
-3. **Si $y \leq \text{argmax}(y) - R(y)$ et $x \leq R(x)$** :
-   $(R(y) + y, R(x) - x) = \gamma^{x+y}$
+### L'agent
 
-4. **Si $y \leq \text{argmax}(y) - R(y)$ et $x \leq \text{argmax}(x) - R(x)$** :
-   $(R(y) + y, R(x) + x) = \gamma^{x+y}$
+L'agent évolue dans un territoire discrétisé en grille cartésienne. Chaque coordonnée de cette grille possède une *valeur d'état* (Ve). L'agent dispose de quatre actions possibles (haut, bas, gauche, droite) et d'une batterie qu'il doit recharger périodiquement.
 
-### Équation Générale
+Son comportement est régi par deux modes :
 
-À partir de ces règles, l'équation générale pour la valeur d'état $V_e$ peut être écrite comme une fonction de la distance par rapport au point de récompense $(R(x), R(y))$, pondérée par le facteur d'escompte $\gamma$. Si l'on généralise les conditions :
+- **Exploitation** : quand la batterie est faible, l'agent suit le gradient des valeurs d'état vers le point de recharge le plus proche.
+- **Exploration** : quand la batterie est suffisante, l'agent explore le territoire pour découvrir de nouveaux points de recharge ou identifier des obstacles.
 
-$V_e(x, y) = \gamma^{|x - R(x)| + |y - R(y)|} \cdot \mathbb{Z}$
+La transition entre ces deux modes est gérée par un **ε-greedy booléen** indexé sur le niveau de charge de la batterie — une simplification volontaire adaptée aux contraintes embarquées.
 
-***
+### Propagation de la récompense
 
-Pour introduire plusieurs récompenses dans l'équation de la valeur d'état, nous devons prendre en compte les contributions de chacune des récompenses potentielles, en fonction de leur position respective et de leur valeur. L'idée est de calculer la contribution de chaque récompense séparément en fonction de la distance à l'état considéré, puis de les additionner pour obtenir la valeur totale de l'état.
+Lorsqu'un point de recharge est découvert, sa coordonnée reçoit la valeur 1. Cette valeur se propage sur l'ensemble du territoire connu via l'exponentiation du facteur d'escompte γ en fonction de la distance de Manhattan :
 
-### Équation pour plusieurs récompenses
+$$Ve(x, y) = \gamma^{|x - R(x)| + |y - R(y)|} \cdot Z$$
 
-Supposons que nous ayons plusieurs récompenses situées à différents points $(R_1(x), R_1(y))$, $(R_2(x), R_2(y))$, ..., $(R_n(x), R_n(y))$ dans l'espace. Les valeurs de ces récompenses sont $\mathbb{Z}_1$, $\mathbb{Z}_2$, ..., $\mathbb{Z}_n$ respectivement.
+Pour plusieurs récompenses simultanées :
 
-La valeur d'état $V_e(x, y)$ en un point $(x, y)$ sera alors la somme des contributions de chacune de ces récompenses, pondérées par le facteur d'escompte $\gamma$ en fonction de la distance à chaque récompense.
+$$Ve(x, y) = \sum_{i=1}^{n} \gamma^{|x - R_i(x)| + |y - R_i(y)|} \cdot Z_i^+$$
 
-L'équation générale devient :
+Cette propagation est qualifiée d'**onde carrée** : elle s'étend de façon isotrope sur les quatre quadrants à partir de la coordonnée récompense, ce qui correspond mathématiquement à une transformation de distance de Manhattan normalisée (voir ci-dessous).
 
-$V_e(x, y) = \sum_{i=1}^{n} \gamma^{|x - R_i(x)| + |y - R_i(y)|} \cdot \mathbb{Z}_i$
+La valeur d'état est une variante simplifiée de l'équation de Bellman :
 
-### Explication
+$$V(s) = \gamma \cdot V(s')$$
 
-- $n$ : Nombre de récompenses.
-- $(R_i(x), R_i(y))$ : Coordonnées de la $i$-ème récompense.
-- $\mathbb{Z}_i$ : Valeur de la $i$-ème récompense.
-- $\gamma$ : Facteur d'escompte.
-- $|x - R_i(x)| + |y - R_i(y)|$ : Distance entre le point $(x, y)$ et la $i$-ème récompense.
+où `max(a)` est découvert dynamiquement à chaque changement d'état, sans être mémorisé.
 
-### Exemple de calcul
+### Navigation par gradient
 
-Supposons que :
-- Il y a deux récompenses : 
-  - $(R_1(x), R_1(y)) = (2, 3)$ avec $\mathbb{Z}_1 = 50$
-  - $(R_2(x), R_2(y)) = (5, 6)$ avec $\mathbb{Z}_2 = 30$
-- Le facteur d'escompte est $\gamma = 0.9$.
-- Nous voulons calculer la valeur $V_e(x, y)$ pour le point $(x, y) = (3, 4)$.
+L'agent retrouve son chemin vers la récompense en calculant à chaque pas :
 
-**Étapes** :
+$$\text{argmax}(V(s') - V(s)) \Rightarrow \text{argmax}(f)$$
 
-1. **Calcul de la contribution de la première récompense** :
-   $d_1 = |3 - 2| + |4 - 3| = 1 + 1 = 2$
-   $\text{Contribution de } \mathbb{Z}_1 = \gamma^2 \cdot 50 = 0.9^2 \cdot 50 = 0.81 \cdot 50 = 40.5$
+La meilleure action est celle qui maximise l'écart entre la valeur d'état de la position suivante et la position actuelle. En cas d'égalité entre plusieurs directions, la préférence est donnée à la continuité du mouvement en cours (voir section *Principe de moindre action* ci-dessous).
 
-2. **Calcul de la contribution de la deuxième récompense** :
-   $d_2 = |3 - 5| + |4 - 6| = 2 + 2 = 4$
-   $\text{Contribution de } \mathbb{Z}_2 = \gamma^4 \cdot 30 = 0.9^4 \cdot 30 = 0.6561 \cdot 30 = 19.683$
+---
 
-3. **Calcul de la valeur totale $V_e(x, y)$** :
-   $V_e(3, 4) = 40.5 + 19.683 = 60.183$
+## Recherches non abouties
 
-### Résultat
+### 1. Principe de moindre action appliqué à la trajectoire
 
-La valeur d'état $V_e(3, 4)$ en prenant en compte les deux récompenses est donc de 60,183.
+Un point qui distingue cette approche des formulations standard : **la meilleure action n'est pas seulement celle qui maximise Ve+1, mais celle qui minimise les changements de direction.**
 
-### Interprétation
+La justification est physique : chaque virage impose des contraintes mécaniques (force centrifuge, perte d'énergie cinétique) à un agent réel se déplaçant à vitesse non nulle. La règle proposée est :
 
-Cette approche permet de prendre en compte plusieurs récompenses et leurs effets combinés sur la valeur d'un état donné. Plus une récompense est proche d'un point $(x, y)$, plus son impact sera important, grâce à la pondération par $\gamma$.
+$$\text{idéal} \left[ \text{argmax}(\vec{a}_{n+1}) = \text{argmax}(\vec{a}_n) \right]$$
 
+Autrement dit, l'agent privilégie le mouvement rectiligne uniforme (variation de direction et de vitesse nulles lors de la transition d'état). En cas d'égalité de Ve entre plusieurs directions disponibles, la direction actuelle est maintenue. Ce n'est qu'en l'absence d'alternative supérieure que l'agent tolère un changement de cap.
+
+Cette contrainte n'est pas habituelle dans les formulations RL sur grille, qui traitent généralement toutes les actions comme équivalentes en coût. Elle introduit implicitement une **inertie directionnelle** sans avoir à modéliser explicitement la dynamique physique de l'agent.
+
+### 2. ε-greedy de moindre action — exploration en spirale carrée
+
+L'exploration aléatoire est remplacée par une **spirale carrée d'Archimède** centrée sur la dernière position de recharge. Ce choix repose sur le même principe : minimiser la complexité des mouvements (nombre de virages) tout en couvrant le territoire de façon exhaustive.
+
+$$\text{spirale carrée} = 2((n+1) + \text{rotation de } 90° \text{ sens horaire} / \text{anneau } n)$$
+
+Dans un espace sans obstacles, c'est la stratégie de couverture optimale en termes de nombre de changements de direction. En présence d'obstacles, un repli vers un mouvement en signal carré est envisagé, la décision étant prise dynamiquement en fonction de ce que l'agent détecte à distance.
+
+### 3. Synthèse des schèmes par moyenne des récompenses propagées
+
+Quand plusieurs récompenses coexistent (positives et négatives), une **synthèse par moyenne** des valeurs d'état propagées est proposée pour chaque coordonnée :
+
+$$f(Ve) = \frac{1}{n} \sum_{i=1}^{n} Ve_i$$
+
+Cela permet à l'agent de ne pas se satisfaire d'une récompense faible si une récompense plus forte est accessible, et d'éviter naturellement les zones à récompenses négatives sans avoir à propager celles-ci avec un gamma distinct. Une normalisation via sigmoïde est également explorée pour borner les valeurs d'état dans [0, 1] :
+
+$$f(Ve) = \frac{1}{1 + e^{-\left(\frac{1}{n}\sum_{i=1}^n Ve_i\right)}}$$
+
+### 4. Gestion de la précision sur systèmes embarqués
+
+Un problème concret identifié : avec γ = 0.90 et un territoire de 1000 états, les valeurs d'état deviennent inférieures à 10⁻⁴⁴, ce qu'un Arduino Uno interprète comme 0. La solution proposée est d'ajuster γ dynamiquement en fonction de la taille du territoire (ex. γ = 0.9999 pour 100 000 états), ou de substituer des entiers aux flottants dans l'implémentation bas niveau.
+
+### 5. Propagation sectorisée pour grands territoires
+
+Pour les territoires dépassant les capacités mémoire d'un microcontrôleur (même avec EEPROM externe), une propagation **secteur par secteur** est proposée : le territoire est divisé en secteurs, et la propagation d'un secteur initialise le secteur adjacent à partir des valeurs de la ligne limitrophe.
+
+$$Ve = (\Delta \cdot (\sum R - 1) \cdot \gamma)^{\sum R - 1}$$
+
+---
+
+## Lien avec les concepts établis
+
+Sauf équation de Bellman, ces travaux ont été conduits indépendamment avant que leurs équivalents académiques soient identifiés. Les correspondances sont les suivantes :
+
+| Concept développé ici | Équivalent dans la littérature |
+|---|---|
+| Propagation de récompense par γ | Équation de Bellman / Programmation dynamique |
+| Onde carrée de valeurs d'état | Transformation de Distance (Manhattan) / Champ de potentiel (Khatib, 1986) |
+| Grille de territoire avec obstacles | Occupancy Grid (Moravec & Elfes, 1985) |
+| Synthèse des schèmes | Reward shaping / Potential-based rewards |
+| Inertie directionnelle (moindre action) | Peu formalisé dans le RL sur grille — contribution potentiellement originale |
+| Exploration en spirale carrée | Couverture complète (coverage path planning) — formulation spécifique originale |
+
+La note d'édition de juin 2025 dans les documents source identifie également le lien avec les **Signed Distance Fields (SDF)** et leur usage dans le deep learning moderne (DeepSDF), ainsi qu'avec l'ingénierie de caractéristiques pré-deep learning (HOG, SVM).
+
+## Statut
+
+Archive. Pas de développement actif prévu. Le code source inclut la version optimisée par IA des algorithmes de propagation et de navigation décrits dans les documents de recherche.
+
+---
+
+*Frédéric Murat — Recherche personnelle, de 2023 à 2026 pour ce README.md
