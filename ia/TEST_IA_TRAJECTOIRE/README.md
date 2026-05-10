@@ -61,9 +61,11 @@ Un point qui distingue cette approche des formulations standard : **la meilleure
 
 La justification est physique : chaque virage impose des contraintes mécaniques (force centrifuge, perte d'énergie cinétique) à un agent réel se déplaçant à vitesse non nulle. La règle proposée est :
 
-$$\text{idéal} \left[ \text{argmax}(\vec{a}_{n+1}) = \text{argmax}(\vec{a}_n) \right]$$
+$$\vec{a}_{n+1} = \vec{a}_n \quad \text{si } Ve(\vec{a}_{n+1}) \geq Ve(\vec{a}_k) \text{ pour tout } k \neq n+1$$
 
-Autrement dit, l'agent privilégie le mouvement rectiligne uniforme (variation de direction et de vitesse nulles lors de la transition d'état). En cas d'égalité de Ve entre plusieurs directions disponibles, la direction actuelle est maintenue. Ce n'est qu'en l'absence d'alternative supérieure que l'agent tolère un changement de cap.
+Autrement dit, l'agent maintient sa direction courante tant qu'elle mène vers une valeur d'état au moins aussi bonne que toute alternative disponible. Ce n'est qu'en l'absence d'une telle direction que l'agent tolère un changement de cap. La variation de vitesse angulaire est idéalement nulle :
+
+$$\omega = 0 \quad \Rightarrow \quad \Delta\vec{a} = \vec{a}_1 - \vec{a}_0 = \vec{0}$$
 
 Cette contrainte n'est pas habituelle dans les formulations RL sur grille, qui traitent généralement toutes les actions comme équivalentes en coût. Elle introduit implicitement une **inertie directionnelle** sans avoir à modéliser explicitement la dynamique physique de l'agent.
 
@@ -71,7 +73,9 @@ Cette contrainte n'est pas habituelle dans les formulations RL sur grille, qui t
 
 L'exploration aléatoire est remplacée par une **spirale carrée d'Archimède** centrée sur la dernière position de recharge. Ce choix repose sur le même principe : minimiser la complexité des mouvements (nombre de virages) tout en couvrant le territoire de façon exhaustive.
 
-$$\text{spirale carrée} = 2((n+1) + \text{rotation de } 90° \text{ sens horaire} / \text{anneau } n)$$
+La longueur du côté parcouru à l'anneau n est :
+
+$$L_n = 2(n + 1) \quad \text{cases, avec une rotation de 90° sens horaire à chaque anneau } n \geq 0$$
 
 Dans un espace sans obstacles, c'est la stratégie de couverture optimale en termes de nombre de changements de direction. En présence d'obstacles, un repli vers un mouvement en signal carré est envisagé, la décision étant prise dynamiquement en fonction de ce que l'agent détecte à distance.
 
@@ -79,21 +83,29 @@ Dans un espace sans obstacles, c'est la stratégie de couverture optimale en ter
 
 Quand plusieurs récompenses coexistent (positives et négatives), une **synthèse par moyenne** des valeurs d'état propagées est proposée pour chaque coordonnée :
 
-$$f(Ve) = \frac{1}{n} \sum_{i=1}^{n} Ve_i$$
+$$\overline{Ve}(x,y) = \frac{1}{n} \sum_{i=1}^{n} Ve_i(x,y)$$
 
-Cela permet à l'agent de ne pas se satisfaire d'une récompense faible si une récompense plus forte est accessible, et d'éviter naturellement les zones à récompenses négatives sans avoir à propager celles-ci avec un gamma distinct. Une normalisation via sigmoïde est également explorée pour borner les valeurs d'état dans [0, 1] :
+Cela permet à l'agent de ne pas se satisfaire d'une récompense faible si une récompense plus forte est accessible, et d'éviter naturellement les zones à récompenses négatives sans avoir à propager celles-ci avec un gamma distinct.
 
-$$f(Ve) = \frac{1}{1 + e^{-\left(\frac{1}{n}\sum_{i=1}^n Ve_i\right)}}$$
+Une normalisation via sigmoïde est également explorée pour borner les valeurs moyennes dans ]0, 1[ :
 
-### 4. Gestion de la précision sur systèmes embarqués
+$$f\bigl(\overline{Ve}\bigr) = \frac{1}{1 + e^{-\,\overline{Ve}(x,y)}}$$
 
-Un problème concret identifié : avec γ = 0.90 et un territoire de 1000 états, les valeurs d'état deviennent inférieures à 10⁻⁴⁴, ce qu'un Arduino Uno interprète comme 0. La solution proposée est d'ajuster γ dynamiquement en fonction de la taille du territoire (ex. γ = 0.9999 pour 100 000 états), ou de substituer des entiers aux flottants dans l'implémentation bas niveau.
+Le désavantage identifié est la perte de précision par arrondi, et la convergence de la sigmoïde vers 1 pour des récompenses positives élevées, ce qui peut effacer les différences entre récompenses fortes.
 
-### 5. Propagation sectorisée pour grands territoires
+### 4. Propagation sectorisée pour grands territoires
 
-Pour les territoires dépassant les capacités mémoire d'un microcontrôleur (même avec EEPROM externe), une propagation **secteur par secteur** est proposée : le territoire est divisé en secteurs, et la propagation d'un secteur initialise le secteur adjacent à partir des valeurs de la ligne limitrophe.
+Pour les territoires dépassant les capacités mémoire d'un microcontrôleur (même avec EEPROM externe), une propagation **secteur par secteur** est proposée : le territoire est divisé en secteurs de dimensions fixes, et la propagation d'un secteur initialise le secteur adjacent à partir des valeurs de la ligne limitrophe entre les deux secteurs.
 
-$$Ve = (\Delta \cdot (\sum R - 1) \cdot \gamma)^{\sum R - 1}$$
+> **Note** : la formule de mise à jour sectorisée est à l'état d'ébauche dans les documents source et n'est pas encore stabilisée. L'idée directrice est que la valeur d'état d'un secteur nouvellement découvert est initialisée à partir des valeurs Ve de la ligne limitrophe avec le secteur précédent, puis propagée par exponentiation de γ comme pour le territoire global.
+
+### 5. Gestion de la précision sur systèmes embarqués
+
+Avec γ = 0.90 et un territoire de 1 000 états, les valeurs d'état descendent en dessous de 10⁻⁴⁴, ce qu'un Arduino Uno interprète comme 0 — rendant la navigation par gradient impossible. La solution proposée est d'ajuster γ dynamiquement en fonction de la taille estimée du territoire :
+
+$$\gamma \to 1^- \quad \text{ex. } \gamma = 0{,}9999 \text{ pour } 100\,000 \text{ états}$$
+
+Une alternative envisagée est de substituer des entiers aux flottants dans l'implémentation bas niveau, la valeur d'état étant alors représentée comme un entier sur un octet (0–255).
 
 ---
 
