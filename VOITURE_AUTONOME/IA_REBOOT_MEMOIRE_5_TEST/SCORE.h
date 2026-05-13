@@ -96,7 +96,7 @@ unsigned char testerTACTIQUE(unsigned char reference)
                                                             //FONCTION recompositionMatrice(positionSVM, tactique)
                                                             //NOTE:cet algorithme est un système de permutation automatique des scores
                                                             //Le principe est que la permutation du score antérieur x vers le score ultérieur limite y (ici 3)
-                                                            //impose derechef une diminution de -1 des autres scores si ceux-ci ont une valeur > 0
+                                                            //impose une diminution de -1 des autres scores si ceux-ci ont une valeur > 0
                                                             //La diminution des autres scores commence à partir de "score antérieur + 1" et se poursuit vers le score ultérieur limite.
                                                             //En outre, un score antérieur = score ultérieur ne vérifie pas cette propriété
 void recompositionMatrice(unsigned char pSVM, unsigned char scoreDorigine, unsigned char tactique)
